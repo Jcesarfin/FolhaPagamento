@@ -1,0 +1,21 @@
+﻿<Window x:Name="telaInicial" x:Class="FolhaPagamento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FolhaPagamento"
+        mc:Ignorable="d" Height="350" Width="525" Title="SISTEMA FOLHA PAGAMENTO">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnCadastros" Content="CADASTROS" HorizontalAlignment="Left" Margin="57,50,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button x:Name="btnConsultas" Content="CONSULTAS" HorizontalAlignment="Left" Margin="57,88,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button x:Name="btnAlteracoes" Content="ALTERAÇÕES" HorizontalAlignment="Left" Margin="57,123,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label x:Name="lblMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="57,24,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnExclusao" Content="EXCLUSÕES" HorizontalAlignment="Left" Margin="57,160,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button x:Name="btnListar" Content="LISTAR" HorizontalAlignment="Left" Margin="57,200,0,0" VerticalAlignment="Top" Width="117" Click="button_Click" FontFamily="Arial"/>
+
+    </Grid>
+</Window>

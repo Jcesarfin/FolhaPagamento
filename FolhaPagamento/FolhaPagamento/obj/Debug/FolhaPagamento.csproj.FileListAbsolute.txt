@@ -1,0 +1,2 @@
+C:\Users\João Cesar\Source\Repos\CSharp\FolhaPagamento\FolhaPagamento\bin\Debug\FolhaPagamento.exe.config
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\bin\Debug\FolhaPagamento.exe.config
