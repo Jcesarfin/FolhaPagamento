@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Cadastar" Height="300" Width="300">
     <Grid>
-        <Button x:Name="btnCadastrarEmpregado" Content="EMPREGADO" HorizontalAlignment="Left" Margin="19,61,0,0" VerticalAlignment="Top" Width="96"/>
-        <Button x:Name="btnCadastrarEndereco" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="19,94,0,0" VerticalAlignment="Top" Width="96"/>
-        <Button x:Name="btnCadastrarDepto" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="19,128,0,0" VerticalAlignment="Top" Width="96"/>
-        <Button x:Name="btnCadastrarCargos" Content="CARGOS" HorizontalAlignment="Left" Margin="19,164,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="btnCadastrarEmpregado" Content="EMPREGADO" HorizontalAlignment="Left" Margin="154,64,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="btnCadastrarEndereco" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="154,97,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="btnCadastrarDepto" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="btnCadastrarCargos" Content="CARGOS" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="96"/>
         <Label x:Name="lblCadastrar" Content="MENU CADASTROS" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button x:Name="btnCadastrarSalario" Content="SALÁRIO" HorizontalAlignment="Left" Margin="19,199,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="btnCadastrarSalario" Content="SALÁRIO" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="96"/>
 
     </Grid>
 </Window>
