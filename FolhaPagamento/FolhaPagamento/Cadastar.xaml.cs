@@ -23,5 +23,35 @@ namespace FolhaPagamento
         {
             InitializeComponent();
         }
+
+        private void btnCadastrarDepto_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroDepartamento cad = new CadastroDepartamento();
+            cad.ShowDialog();
+        }
+
+        private void btnCadastrarCargos_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroCargo cad = new CadastroCargo();
+            cad.ShowDialog();
+        }
+
+        private void btnCadastrarEmpregado_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroEmpregado cad = new CadastroEmpregado();
+            cad.ShowDialog();
+        }
+
+        private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroEndereco cad = new CadastroEndereco();
+            cad.ShowDialog();
+        }
+
+        private void btnCadastrarSalario_Click(object sender, RoutedEventArgs e)
+        {
+            Salario sal = new Salario();
+            sal.ShowDialog();
+        }
     }
 }

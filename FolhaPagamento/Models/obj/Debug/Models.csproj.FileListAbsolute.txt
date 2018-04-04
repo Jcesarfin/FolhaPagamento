@@ -1,0 +1,5 @@
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Models\bin\Debug\Models.dll
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Models\bin\Debug\Models.pdb
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Models\obj\Debug\Models.dll
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Models\obj\Debug\Models.pdb
