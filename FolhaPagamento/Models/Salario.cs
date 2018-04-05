@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Salario
+    public class Salario
     {
         public int SalarioID { get; set; }
         public int QtdeHoraNormal { get; set; }
@@ -19,6 +19,16 @@ namespace Models
         public float SalarioLiquido { get; set; }
         public DateTime MesReferencia { get; set; }
         public int AnoReferencia { get; set; }
+
+
+        public int EmpregadoID { get; set; }
+        public Empregado _Empregado { get; set; }
+
+        public int CargoID { get; set; }
+        public Cargo _Cargo { get; set; }
+
+        public int DepartamentoID { get; set; }
+        public Departamento _Departamento { get; set; }
 
     }
 }

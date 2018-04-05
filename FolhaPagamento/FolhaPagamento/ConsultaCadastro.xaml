@@ -1,0 +1,39 @@
+﻿<Window x:Name="telaConsCadastro" x:Class="FolhaPagamento.ConsultaCadastro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FolhaPagamento"
+        mc:Ignorable="d"
+        Title="CONSULTA CADASTRO" Height="452.95" Width="477">
+    <Grid Margin="0,0,-173,-102">
+        <Label x:Name="lblTituloConsultaCad" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtConsEmpCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btnPesqEmpCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="261,16,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblConsNomeEmp" Content="NOME:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsIdentEmp" Content="NR. IDENTIDADE:" HorizontalAlignment="Left" Margin="8,67,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsCpfEmp" Content="NR. CPF:" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsDtNascEmp" Content="DATA NASCIMENTO:" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsDtAdmEmp" Content="DATA ADMISSÃO:" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsDtDemEmp" Content="DATA DEMISSÃO:" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsDepEmp" Content="DEPARTAMENTO:" HorizontalAlignment="Left" Margin="13,207,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsCargoEmp" Content="CARGO:" HorizontalAlignment="Left" Margin="13,233,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsRuaEmp" Content="RUA:" HorizontalAlignment="Left" Margin="16,259,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsNumEmp" Content="NUMERO:" HorizontalAlignment="Left" Margin="16,290,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsCepEmp" Content="CEP:" HorizontalAlignment="Left" Margin="16,321,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblConsComplEmp" Content="COMPLEMENTO:" HorizontalAlignment="Left" Margin="16,352,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtConsNomeEmp" HorizontalAlignment="Left" Height="23" Margin="137,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsIdentEmp" HorizontalAlignment="Left" Height="23" Margin="137,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsCpfEmp" HorizontalAlignment="Left" Height="23" Margin="137,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsDtNascEmp" HorizontalAlignment="Left" Height="23" Margin="137,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsDtAdmEmp" HorizontalAlignment="Left" Height="23" Margin="137,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsDtDemEmp" HorizontalAlignment="Left" Height="23" Margin="137,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsDeptoEmp" HorizontalAlignment="Left" Height="23" Margin="137,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsCargoEmp" HorizontalAlignment="Left" Height="23" Margin="137,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsRuaEmp" HorizontalAlignment="Left" Height="23" Margin="137,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsNumEmp" HorizontalAlignment="Left" Height="23" Margin="137,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsCepEmp" HorizontalAlignment="Left" Height="23" Margin="137,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <TextBox x:Name="txtConsComplEmp" HorizontalAlignment="Left" Height="23" Margin="137,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+
+    </Grid>
+</Window>

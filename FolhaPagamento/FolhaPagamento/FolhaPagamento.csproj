@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConsultaCadastro.xaml.cs">
+      <DependentUpon>ConsultaCadastro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaFolha.xaml.cs">
+      <DependentUpon>ConsultaFolha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaGeral.xaml.cs">
+      <DependentUpon>ConsultaGeral.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Salario.xaml.cs">
       <DependentUpon>Salario.xaml</DependentUpon>
     </Compile>
@@ -75,6 +84,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CadastroEndereco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsultaCadastro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsultaFolha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsultaGeral.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

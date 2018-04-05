@@ -18,9 +18,16 @@ namespace Models
         public DateTime DataDemissão { get; set; }
 
         public int EnderecoID { get; set; }
+        public Endereco _Endereco { get; set; }
+
         public int DepartamentoID { get; set; }
+        public Departamento _Departamento { get; set; }
+
         public int CargoID { get; set; }
+        public Cargo _Cargo { get; set; }
+
         public int SalarioID { get; set; }
+        public Salario _Salario { get; set; }
 
     }
 }

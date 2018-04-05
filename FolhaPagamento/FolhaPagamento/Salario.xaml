@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="APURAÇÃO SALÁRIO" Height="300" Width="461.333">
+        Title="APURAÇÃO SALÁRIO" Height="438" Width="529.333">
     <Grid Margin="0,0,2,-7">
         <Label x:Name="lblApSalCpfEmpregado" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPesquisaCPF" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
@@ -28,7 +28,11 @@
         <Label x:Name="lblVlrLiqSalario" Content="VALOR LIQUIDO:" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtVlrBrutoSalario" HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtVlrLiqSalario" HorizontalAlignment="Left" Height="23" Margin="190,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSalvarSalario" Content="SALVAR" HorizontalAlignment="Left" Margin="354,251,0,0" VerticalAlignment="Top" Width="55" FontSize="8"/>
+        <Button x:Name="btnSalvarSalario" Content="SALVAR" HorizontalAlignment="Left" Margin="354,307,0,0" VerticalAlignment="Top" Width="55" FontSize="8"/>
+        <Label x:Name="lblMesRefSalario" Content="MÊS REFERÊNCIA" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAnoRefSalario" Content="ANO REFERÊNCIA" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMesRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAnoRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
