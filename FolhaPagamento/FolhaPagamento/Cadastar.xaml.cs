@@ -48,10 +48,19 @@ namespace FolhaPagamento
             cad.ShowDialog();
         }
 
-        private void btnCadastrarSalario_Click(object sender, RoutedEventArgs e)
+
+        private void btnFolha_Click(object sender, RoutedEventArgs e)
         {
-            Salario sal = new Salario();
-            sal.ShowDialog();
+            Folha folha = new Folha();
+            folha.ShowDialog();
         }
+
+        private void btnVoltarMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.ShowDialog();
+        }
+
+        
     }
 }

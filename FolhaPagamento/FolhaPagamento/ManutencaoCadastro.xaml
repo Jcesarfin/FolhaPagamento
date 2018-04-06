@@ -1,11 +1,11 @@
-﻿<Window x:Name="telaConsCadastro" x:Class="FolhaPagamento.ConsultaCadastro"
+﻿<Window x:Name="telaManutCadastro" x:Class="FolhaPagamento.ConsultaCadastro"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="CONSULTA CADASTRO" Height="452.95" Width="477">
+        Title="MANUTENÇÃO CADASTRO" Height="452.95" Width="477">
     <Grid Margin="0,0,-173,-102">
         <Label x:Name="lblTituloConsultaCad" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtConsEmpCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
@@ -34,6 +34,10 @@
         <TextBox x:Name="txtConsNumEmp" HorizontalAlignment="Left" Height="23" Margin="137,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <TextBox x:Name="txtConsCepEmp" HorizontalAlignment="Left" Height="23" Margin="137,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <TextBox x:Name="txtConsComplEmp" HorizontalAlignment="Left" Height="23" Margin="137,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+        <Button x:Name="btnVoltarMenuPrinc" Content="MENU PRINCIPAL" HorizontalAlignment="Left" Margin="53,398,0,0" VerticalAlignment="Top" Width="108"/>
+        <Button x:Name="btnVoltarMenuCons" Content="MENU CONSULTAS" HorizontalAlignment="Left" Margin="223,398,0,0" VerticalAlignment="Top" Width="113"/>
+        <Button x:Name="btnManutEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="380,321,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btbManutExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="380,352,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

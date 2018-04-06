@@ -1,0 +1,18 @@
+﻿<Window x:Name="TelaManutGeral" x:Class="FolhaPagamento.ManutencaoGeral"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FolhaPagamento"
+        mc:Ignorable="d"
+        Title="MANUTENÇÃO GERAL" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="38*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnManutCadastro" Content="MANUTENÇÃO CADASTRO" HorizontalAlignment="Left" Margin="53,50,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnManutFolha" Content="MANUTENÇÃO FOLHA" HorizontalAlignment="Left" Margin="53,118,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

@@ -55,17 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ConsultaCadastro.xaml.cs">
-      <DependentUpon>ConsultaCadastro.xaml</DependentUpon>
+    <Compile Include="ManutencaoCadastro.xaml.cs">
+      <DependentUpon>ManutencaoCadastro.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConsultaFolha.xaml.cs">
-      <DependentUpon>ConsultaFolha.xaml</DependentUpon>
+    <Compile Include="ManutencaoFolha.xaml.cs">
+      <DependentUpon>ManutencaoFolha.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConsultaGeral.xaml.cs">
-      <DependentUpon>ConsultaGeral.xaml</DependentUpon>
+    <Compile Include="ManutencaoGeral.xaml.cs">
+      <DependentUpon>ManutencaoGeral.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Salario.xaml.cs">
-      <DependentUpon>Salario.xaml</DependentUpon>
+    <Compile Include="Folha.xaml.cs">
+      <DependentUpon>Folha.xaml</DependentUpon>
     </Compile>
     <Page Include="Cadastar.xaml">
       <SubType>Designer</SubType>
@@ -87,15 +87,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ConsultaCadastro.xaml">
+    <Page Include="ManutencaoCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ConsultaFolha.xaml">
+    <Page Include="ManutencaoFolha.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ConsultaGeral.xaml">
+    <Page Include="ManutencaoGeral.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,7 +126,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Salario.xaml">
+    <Page Include="Folha.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

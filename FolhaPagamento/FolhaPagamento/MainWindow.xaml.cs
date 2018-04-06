@@ -31,5 +31,11 @@ namespace FolhaPagamento
             cad.ShowDialog();
 
         }
+
+        private void btnManutencao_Click(object sender, RoutedEventArgs e)
+        {
+            ManutencaoGeral manut = new ManutencaoGeral();
+            manut.ShowDialog();
+        }
     }
 }

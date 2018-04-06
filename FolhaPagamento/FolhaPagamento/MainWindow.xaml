@@ -11,11 +11,9 @@
             <ColumnDefinition Width="137*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="btnCadastros" Content="CADASTROS" HorizontalAlignment="Left" Margin="18,71,0,0" VerticalAlignment="Top" Width="112" Click="btnCadastros_Click"/>
-        <Button x:Name="btnConsultas" Content="CONSULTAS" HorizontalAlignment="Left" Margin="18,109,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="btnAlteracoes" Content="ALTERAÇÕES" HorizontalAlignment="Left" Margin="18,148,0,0" VerticalAlignment="Top" Width="112"/>
+        <Button x:Name="btnManutencao" Content="MANUTENÇÃO" HorizontalAlignment="Left" Margin="18,109,0,0" VerticalAlignment="Top" Width="112" Click="btnManutencao_Click"/>
         <Label x:Name="lblMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top" Width="142" FontSize="20"/>
-        <Button x:Name="btnExclusao" Content="EXCLUSÕES" HorizontalAlignment="Left" Margin="18,187,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="btnListar" Content="LISTAR" HorizontalAlignment="Left" Margin="18,221,0,0" VerticalAlignment="Top" Width="112" />
+        <Button x:Name="btnRelatorios" Content="RELATÓRIOS" HorizontalAlignment="Left" Margin="18,147,0,0" VerticalAlignment="Top" Width="112" />
 
     </Grid>
 </Window>

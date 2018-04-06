@@ -1,11 +1,11 @@
-﻿<Window x:Name="telaSalario" x:Class="FolhaPagamento.Salario"
+﻿<Window x:Name="telaFolhaPgto" x:Class="FolhaPagamento.Folha"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="APURAÇÃO SALÁRIO" Height="438" Width="529.333">
+        Title="FOLHA PAGAMENTO" Height="438" Width="529.333">
     <Grid Margin="0,0,2,-7">
         <Label x:Name="lblApSalCpfEmpregado" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPesquisaCPF" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>

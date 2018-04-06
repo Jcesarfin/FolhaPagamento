@@ -168,6 +168,22 @@ namespace FolhaPagamento {
         #line default
         #line hidden
         
+        
+        #line 25 "..\..\ConsultaFolha.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnVoltarMenuPrinc;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 26 "..\..\ConsultaFolha.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btnVoltarMenuCons;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -245,6 +261,12 @@ namespace FolhaPagamento {
             return;
             case 16:
             this.txtConsVlrLiqFolha = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 17:
+            this.btnVoltarMenuPrinc = ((System.Windows.Controls.Button)(target));
+            return;
+            case 18:
+            this.btnVoltarMenuCons = ((System.Windows.Controls.Button)(target));
             return;
             }
             this._contentLoaded = true;

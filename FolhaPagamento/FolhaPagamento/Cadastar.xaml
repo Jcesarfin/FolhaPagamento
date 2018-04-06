@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="Cadastar" Height="300" Width="300">
     <Grid>
-        <Button x:Name="btnCadastrarEmpregado" Content="EMPREGADO" HorizontalAlignment="Left" Margin="154,64,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarEmpregado_Click"/>
-        <Button x:Name="btnCadastrarEndereco" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="154,97,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarEndereco_Click"/>
-        <Button x:Name="btnCadastrarDepto" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarDepto_Click"/>
-        <Button x:Name="btnCadastrarCargos" Content="CARGOS" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarCargos_Click"/>
+        <Button x:Name="btnCadastrarEmpregado" Content="EMPREGADO" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarEmpregado_Click"/>
+        <Button x:Name="btnCadastrarEndereco" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarEndereco_Click"/>
+        <Button x:Name="btnCadastrarDepto" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarDepto_Click"/>
+        <Button x:Name="btnCadastrarCargos" Content="CARGOS" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarCargos_Click"/>
         <Label x:Name="lblCadastrar" Content="MENU CADASTROS" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Button x:Name="btnCadastrarSalario" Content="SALÁRIO" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="96" Click="btnCadastrarSalario_Click"/>
+        <Button x:Name="btnFolha" Content="FOLHA PAGAMENTO" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" Width="139" Click="btnFolha_Click" />
+        <Button x:Name="btnVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="157,239,0,0" VerticalAlignment="Top" Width="114" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>
