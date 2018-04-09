@@ -33,5 +33,11 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\o
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\ManutencaoCadastro.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\ManutencaoFolha.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\ManutencaoGeral.baml
-C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\Salario.g.cs
-C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\Salario.baml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\Folha.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\Folha.baml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioEmpregados.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioFolha.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioEmpregados.baml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioFolha.baml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioGeral.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioGeral.baml

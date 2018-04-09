@@ -1,0 +1,15 @@
+﻿<Window x:Name="telaRelatGeral" x:Class="FolhaPagamento.RelatorioGeral"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FolhaPagamento"
+        mc:Ignorable="d"
+        Title="RELATÓRIOS" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="btbRelatEmpreg" Content="EMPREGADOS" HorizontalAlignment="Left" Margin="66,58,0,0" VerticalAlignment="Top" Width="114" Click="btbRelatEmpreg_Click"/>
+        <Button x:Name="btbRelatFolha" Content="FOLHA PAGAMENTO" HorizontalAlignment="Left" Margin="66,100,0,0" VerticalAlignment="Top" Width="114" Click="btbRelatFolha_Click"/>
+        <Button x:Name="btbVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top" Width="106" Click="btbVoltarMenu_Click"/>
+
+    </Grid>
+</Window>

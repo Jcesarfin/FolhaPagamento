@@ -13,7 +13,7 @@
         <TextBox x:Name="txtNomeDepto" HorizontalAlignment="Left" Height="23" Margin="162,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtLocalDepto" HorizontalAlignment="Left" Height="23" Margin="162,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSalvarCadDepto" Content="SALVAR" HorizontalAlignment="Left" Margin="207,233,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
-        <Button x:Name="btnVoltarMenu" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top" Width="89" FontSize="8"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top" Width="89" FontSize="8" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>

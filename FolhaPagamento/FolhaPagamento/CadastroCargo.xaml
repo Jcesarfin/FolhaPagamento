@@ -12,7 +12,7 @@
         <TextBox x:Name="txtNomeCargo" HorizontalAlignment="Left" Height="23" Margin="152,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtVlrHora" HorizontalAlignment="Left" Height="23" Margin="152,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSalvarCadCargo" Content="SALVAR" HorizontalAlignment="Left" Margin="197,239,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
-        <Button x:Name="btnVoltarMenu" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="90" FontSize="8"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="90" FontSize="8" Click="btnVoltarMenu_Click"/>
         <Label x:Name="lblVlrHora" Content="VALOR HORA:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
 
     </Grid>

@@ -11,8 +11,9 @@
             <ColumnDefinition Width="35*"/>
             <ColumnDefinition Width="38*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnManutCadastro" Content="MANUTENÇÃO CADASTRO" HorizontalAlignment="Left" Margin="53,50,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnManutFolha" Content="MANUTENÇÃO FOLHA" HorizontalAlignment="Left" Margin="53,118,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnManutCadastro" Content="MANUTENÇÃO CADASTRO" HorizontalAlignment="Left" Margin="53,50,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2" Click="btnManutCadastro_Click"/>
+        <Button x:Name="btnManutFolha" Content="MANUTENÇÃO FOLHA" HorizontalAlignment="Left" Margin="53,118,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2" Click="btnManutFolha_Click"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="22,236,0,0" VerticalAlignment="Top" Width="114" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>

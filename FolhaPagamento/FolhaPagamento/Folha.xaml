@@ -29,10 +29,11 @@
         <TextBox x:Name="txtVlrBrutoSalario" HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtVlrLiqSalario" HorizontalAlignment="Left" Height="23" Margin="190,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSalvarSalario" Content="SALVAR" HorizontalAlignment="Left" Margin="354,307,0,0" VerticalAlignment="Top" Width="55" FontSize="8"/>
-        <Label x:Name="lblMesRefSalario" Content="MÊS REFERÊNCIA" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblAnoRefSalario" Content="ANO REFERÊNCIA" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMesRefSalario" Content="MÊS:" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAnoRefSalario" Content="ANO:" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtMesRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAnoRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="16,371,0,0" VerticalAlignment="Top" Width="113" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>

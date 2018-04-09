@@ -67,6 +67,15 @@
     <Compile Include="Folha.xaml.cs">
       <DependentUpon>Folha.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelatorioEmpregados.xaml.cs">
+      <DependentUpon>RelatorioEmpregados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioFolha.xaml.cs">
+      <DependentUpon>RelatorioFolha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioGeral.xaml.cs">
+      <DependentUpon>RelatorioGeral.xaml</DependentUpon>
+    </Compile>
     <Page Include="Cadastar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +136,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Folha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatorioEmpregados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatorioFolha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatorioGeral.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

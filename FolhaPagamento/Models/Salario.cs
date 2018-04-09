@@ -17,8 +17,8 @@ namespace Models
         public float VlrIR { get; set; }
         public float SalarioBruto { get; set; }
         public float SalarioLiquido { get; set; }
-        public String MesReferencia { get; set; }
-        public int AnoReferencia { get; set; }
+        public int Mes { get; set; }
+        public int Ano { get; set; }
 
 
         public int EmpregadoID { get; set; }

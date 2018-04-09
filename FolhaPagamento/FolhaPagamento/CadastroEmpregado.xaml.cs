@@ -23,5 +23,17 @@ namespace FolhaPagamento
         {
             InitializeComponent();
         }
+
+        private void btnVoltarMenuCadastro_Click(object sender, RoutedEventArgs e)
+        {
+            Cadastar cad = new Cadastar();
+            cad.ShowDialog();
+        }
+
+        private void btnMigrarCadEndereco_Click(object sender, RoutedEventArgs e)
+        {
+            CadastroEndereco cad = new CadastroEndereco();
+            cad.ShowDialog();
+        }
     }
 }

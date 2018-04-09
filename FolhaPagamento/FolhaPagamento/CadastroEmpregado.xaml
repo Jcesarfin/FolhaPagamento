@@ -21,8 +21,8 @@
         <TextBox x:Name="txtDtAdmissao" HorizontalAlignment="Left" Height="23" Margin="134,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtDtDemissao" HorizontalAlignment="Left" Height="23" Margin="134,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSalvarCadEmpregado" Content="SALVAR" HorizontalAlignment="Left" Margin="196,254,0,0" VerticalAlignment="Top" Width="58" FontSize="8"/>
-        <Button x:Name="btnMigrarCadEndereco" Content="CADASTRAR ENDEREÇO" HorizontalAlignment="Left" Margin="81,254,0,0" VerticalAlignment="Top" Width="110" FontSize="8"/>
-        <Button x:Name="btnVoltarMenuCadastro" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="66" FontSize="8"/>
+        <Button x:Name="btnMigrarCadEndereco" Content="CADASTRAR ENDEREÇO" HorizontalAlignment="Left" Margin="81,254,0,0" VerticalAlignment="Top" Width="110" FontSize="8" Click="btnMigrarCadEndereco_Click"/>
+        <Button x:Name="btnVoltarMenuCadastro" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="66" FontSize="8" Click="btnVoltarMenuCadastro_Click"/>
         <Label x:Name="lblDeptoEmpregado" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCargoEmpregado" Content="CARGO" HorizontalAlignment="Left" Margin="12,217,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbxDeptoEmpregado" HorizontalAlignment="Left" Margin="134,194,0,0" VerticalAlignment="Top" Width="120"/>

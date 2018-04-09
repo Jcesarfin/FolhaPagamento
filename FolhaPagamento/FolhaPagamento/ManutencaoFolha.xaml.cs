@@ -17,11 +17,24 @@ namespace FolhaPagamento
     /// <summary>
     /// Lógica interna para ConsultaFolha.xaml
     /// </summary>
-    public partial class ConsultaFolha : Window
+    public partial class ManutencaoFolha : Window
     {
-        public ConsultaFolha()
+        public ManutencaoFolha()
         {
             InitializeComponent();
+        }
+
+        private void btnVoltarMenuPrinc_Click(object sender, RoutedEventArgs e)
+        {
+
+            MainWindow cad = new MainWindow();
+            cad.ShowDialog();
+        }
+
+        private void btnVoltarMenuManut_Click(object sender, RoutedEventArgs e)
+        {
+            ManutencaoGeral manut = new ManutencaoGeral();
+            manut.ShowDialog();
         }
     }
 }

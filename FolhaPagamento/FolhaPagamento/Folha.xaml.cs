@@ -17,11 +17,17 @@ namespace FolhaPagamento
     /// <summary>
     /// Lógica interna para Salario.xaml
     /// </summary>
-    public partial class Salario : Window
+    public partial class Folha : Window
     {
-        public Salario()
+        public Folha()
         {
             InitializeComponent();
+        }
+
+        private void btnVoltarMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Cadastar cad = new Cadastar();
+            cad.ShowDialog();
         }
     }
 }
