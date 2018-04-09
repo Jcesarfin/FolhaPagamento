@@ -37,5 +37,11 @@ namespace FolhaPagamento
             ManutencaoGeral manut = new ManutencaoGeral();
             manut.ShowDialog();
         }
+
+        private void btnRelatorios_Click(object sender, RoutedEventArgs e)
+        {
+            RelatorioGeral relat = new RelatorioGeral();
+            relat.ShowDialog();
+        }
     }
 }

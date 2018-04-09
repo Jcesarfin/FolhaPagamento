@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="MANUTENÇÃO CADASTRO" Height="452.95" Width="477">
+        Title="MANUTENÇÃO CADASTRO" Background="#FFF17272">
     <Grid Margin="0,0,-173,-102">
         <Label x:Name="lblTituloConsultaCad" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtConsEmpCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
@@ -34,8 +34,8 @@
         <TextBox x:Name="txtConsNumEmp" HorizontalAlignment="Left" Height="23" Margin="137,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <TextBox x:Name="txtConsCepEmp" HorizontalAlignment="Left" Height="23" Margin="137,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
         <TextBox x:Name="txtConsComplEmp" HorizontalAlignment="Left" Height="23" Margin="137,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
-        <Button x:Name="btnVoltarMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="53,398,0,0" VerticalAlignment="Top" Width="108" Click="btnVoltarMenuPrinc_Click"/>
-        <Button x:Name="btnVoltarManutGeral" Content="MENU MANUTENÇÃO" HorizontalAlignment="Left" Margin="201,398,0,0" VerticalAlignment="Top" Width="135" Click="btnVoltarManutGeral_Click"/>
+        <Button x:Name="btnVoltarMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,408,0,0" VerticalAlignment="Top" Width="108" Click="btnVoltarMenuPrinc_Click"/>
+        <Button x:Name="btnVoltarManutGeral" Content="MENU MANUTENÇÃO" HorizontalAlignment="Left" Margin="147,408,0,0" VerticalAlignment="Top" Width="135" Click="btnVoltarManutGeral_Click"/>
         <Button x:Name="btnManutEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="380,321,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btbManutExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="380,352,0,0" VerticalAlignment="Top" Width="75"/>
 

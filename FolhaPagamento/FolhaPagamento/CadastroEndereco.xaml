@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Endereços" Height="300" Width="300">
+        Title="Cadastro de Endereços" Background="#FFF17272">
+    <Window.Resources>
+        <Color x:Key="#FFF17272">#FFE55757</Color>
+    </Window.Resources>
     <Grid>
         <Label x:Name="lblTituloEndereco" Content="INFORME OS DADOS:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblEndRua" Content="NOME DA RUA:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
@@ -16,8 +19,8 @@
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="135,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="135,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="135,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSalvarEndereco" Content="SALVAR" HorizontalAlignment="Left" Margin="180,239,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
-        <Button x:Name="btnVoltarMenu" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="94" FontSize="8" Click="btnVoltarMenu_Click"/>
+        <Button x:Name="btnSalvarEndereco" Content="SALVAR" HorizontalAlignment="Left" Margin="164,177,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
+        <Button x:Name="btnVoltarMenu" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Width="94" FontSize="8" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>

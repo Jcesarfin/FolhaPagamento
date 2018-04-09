@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="RELATÓRIO FOLHA PAGAMENTO" Height="300" Width="592.105">
+        Title="RELATÓRIO FOLHA PAGAMENTO" Background="#FFF17272">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -17,20 +17,20 @@
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="342*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="lblRelatFolhaNome" Content="NOME" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblRelatFolhaSalBr" Content="SALÁRIO BRUTO" Grid.Column="1" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblRelatFolhaSalLiq" Content="SALÁRIO LIQUIDO" Grid.Column="2" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblRelatFolhaMes" Content="MÊS" Grid.Column="3" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblRelatFolhaAno" Content="ANO" Grid.Column="4" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblRelatFolhaNome" Content="NOME" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <Label x:Name="lblRelatFolhaSalBr" Content="SALÁRIO BRUTO" Grid.Column="1" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="98"/>
+        <Label x:Name="lblRelatFolhaSalLiq" Content="SALÁRIO LIQUIDO" Grid.Column="2" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="107"/>
+        <Label x:Name="lblRelatFolhaMes" Content="MÊS" Grid.Column="3" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="33"/>
+        <Label x:Name="lblRelatFolhaAno" Content="ANO" Grid.Column="4" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="36"/>
         <TextBox x:Name="txtRelatFolhaNome" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <TextBox x:Name="txtRelatFolhaSalBr" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="txtRelatFolhaSalLiq" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
         <TextBox x:Name="txtRelatFolhaMes" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
         <TextBox x:Name="txtRelatFolhaAno" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
-        <Button x:Name="btnVoltarRelatGeral" Content="MENU RELATÓRIOS" HorizontalAlignment="Left" Margin="10,59,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Click="btnVoltarRelatGeral_Click"/>
+        <Button x:Name="btnVoltarRelatGeral" Content="MENU RELATÓRIOS" HorizontalAlignment="Left" Margin="10,52,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Click="btnVoltarRelatGeral_Click" Height="20"/>
     </Grid>
 </Window>

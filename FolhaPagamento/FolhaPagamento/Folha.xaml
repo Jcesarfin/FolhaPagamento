@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="FOLHA PAGAMENTO" Height="438" Width="529.333">
+        Title="FOLHA PAGAMENTO" Background="#FFF17272">
+    <Window.Resources>
+        <Color x:Key="#FFF17272">#FFF06161</Color>
+    </Window.Resources>
     <Grid Margin="0,0,2,-7">
         <Label x:Name="lblApSalCpfEmpregado" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPesquisaCPF" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
@@ -33,7 +36,7 @@
         <Label x:Name="lblAnoRefSalario" Content="ANO:" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtMesRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAnoRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="16,371,0,0" VerticalAlignment="Top" Width="113" Click="btnVoltarMenu_Click"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="113" Click="btnVoltarMenu_Click"/>
 
     </Grid>
 </Window>

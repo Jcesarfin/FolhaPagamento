@@ -11,9 +11,9 @@ namespace Models
         public int EnderecoID { get; set; }
         public String Rua { get; set; }
         public int Numero { get; set; }
+        public int Cep { get; set; }
         public String Complemento { get; set; }
 
-        public int EmpregadoID { get; set; }
-        public Empregado _Empregado { get; set; }
+        
     }
 }

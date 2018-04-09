@@ -12,7 +12,6 @@ namespace Models
         public String NomeDepartamento { get; set; }
         public String LocalDepartamento { get; set; }
 
-        public int EmpregadoID { get; set; }
-        public Empregado _Empregado { get; set; }
+        
     }
 }

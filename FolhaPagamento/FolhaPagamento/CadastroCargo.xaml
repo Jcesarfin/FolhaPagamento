@@ -5,14 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Cargos" Height="300" Width="300">
+        Title="Cadastro de Cargos" Background="#FFF17272">
+    <Window.Resources>
+        <Color x:Key="#FFF17272">#FFE25E5E</Color>
+    </Window.Resources>
     <Grid>
         <Label x:Name="lblTituloCadCargo" Content="INFORME OS DADOS:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNomeCargo" Content="NOME DO CARGO:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNomeCargo" HorizontalAlignment="Left" Height="23" Margin="152,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtVlrHora" HorizontalAlignment="Left" Height="23" Margin="152,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSalvarCadCargo" Content="SALVAR" HorizontalAlignment="Left" Margin="197,239,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
-        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="90" FontSize="8" Click="btnVoltarMenu_Click"/>
+        <Button x:Name="btnSalvarCadCargo" Content="SALVAR" HorizontalAlignment="Left" Margin="197,120,0,0" VerticalAlignment="Top" Width="75" FontSize="8"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="90" FontSize="8" Click="btnVoltarMenu_Click"/>
         <Label x:Name="lblVlrHora" Content="VALOR HORA:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
 
     </Grid>

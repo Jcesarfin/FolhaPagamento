@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Empregados" Height="300" Width="300">
+        Title="Cadastro de Empregados" Background="#FFF17272">
+    <Window.Resources>
+        <Color x:Key="#FFF17272">#FFDC7676</Color>
+    </Window.Resources>
     <Grid Margin="0,0,0,-31">
         <Label x:Name="lblTituloEmpregado" Content="INFORME OS DADOS:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNomeEmpregado" Content="NOME:" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>

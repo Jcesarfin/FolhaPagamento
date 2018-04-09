@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="MANUTENÇÃO GERAL" Height="300" Width="300">
+        Title="MANUTENÇÃO GERAL" Background="#FFF17272">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="35*"/>
             <ColumnDefinition Width="38*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnManutCadastro" Content="MANUTENÇÃO CADASTRO" HorizontalAlignment="Left" Margin="53,50,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2" Click="btnManutCadastro_Click"/>
-        <Button x:Name="btnManutFolha" Content="MANUTENÇÃO FOLHA" HorizontalAlignment="Left" Margin="53,118,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="2" Click="btnManutFolha_Click"/>
-        <Button x:Name="btnVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="22,236,0,0" VerticalAlignment="Top" Width="114" Click="btnVoltarMenu_Click"/>
+        <Button x:Name="btnManutCadastro" Content="MANUTENÇÃO CADASTRO" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="242" Click="btnManutCadastro_Click" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnManutFolha" Content="MANUTENÇÃO FOLHA" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="242" Click="btnManutFolha_Click" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top" Width="114" Click="btnVoltarMenu_Click" FontWeight="Bold"/>
 
     </Grid>
 </Window>

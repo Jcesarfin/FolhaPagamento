@@ -4,16 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
-        mc:Ignorable="d" Height="350" Width="446.333" Title="SISTEMA FOLHA PAGAMENTO">
-    <Grid Margin="0,0,174,0">
+        mc:Ignorable="d" Title="SISTEMA FOLHA PAGAMENTO" Background="#FFF17272">
+    <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="380*"/>
-            <ColumnDefinition Width="137*"/>
+            <ColumnDefinition Width="259*"/>
+            <ColumnDefinition Width="120*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnCadastros" Content="CADASTROS" HorizontalAlignment="Left" Margin="18,71,0,0" VerticalAlignment="Top" Width="112" Click="btnCadastros_Click"/>
-        <Button x:Name="btnManutencao" Content="MANUTENÇÃO" HorizontalAlignment="Left" Margin="18,109,0,0" VerticalAlignment="Top" Width="112" Click="btnManutencao_Click"/>
-        <Label x:Name="lblMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top" Width="142" FontSize="20"/>
-        <Button x:Name="btnRelatorios" Content="RELATÓRIOS" HorizontalAlignment="Left" Margin="18,147,0,0" VerticalAlignment="Top" Width="112" />
+
+        <Button x:Name="btnCadastros" Content="CADASTROS" HorizontalAlignment="Left" Margin="18,71,0,0" VerticalAlignment="Top" Width="183" Click="btnCadastros_Click" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="btnManutencao" Content="MANUTENÇÃO" HorizontalAlignment="Left" Margin="18,109,0,0" VerticalAlignment="Top" Width="183" Click="btnManutencao_Click" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="lblMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top" Width="183" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnRelatorios" Content="RELATÓRIOS" HorizontalAlignment="Left" Margin="18,147,0,0" VerticalAlignment="Top" Width="183" Click="btnRelatorios_Click" FontWeight="Bold" FontSize="16" />
 
     </Grid>
 </Window>

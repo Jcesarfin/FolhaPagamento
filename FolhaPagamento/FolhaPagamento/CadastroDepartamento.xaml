@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Departamentos" Height="300" Width="300">
+        Title="Cadastro de Departamentos" Background="#FFF17272">
+    <Window.Resources>
+        <Color x:Key="#FFF17272">#FFD65252</Color>
+    </Window.Resources>
     <Grid>
         <Label x:Name="lblTituloCadDepto" Content="INFORME OS DADOS:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNomeDepto" Content="NOME DEPARTAMENTO:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
