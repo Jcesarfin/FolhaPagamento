@@ -11,31 +11,31 @@
     </Window.Resources>
     <Grid Margin="0,0,2,-7">
         <Label x:Name="lblApSalCpfEmpregado" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPesquisaCPF" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <TextBox x:Name="txtFolhaCpf" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
         <Button x:Name="btnPesquisaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="349,17,0,0" VerticalAlignment="Top" Width="60" FontSize="8"/>
         <Label x:Name="lblNomeEmpSalario" Content="NOME EMPREGADO:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNomeEmpSalario" HorizontalAlignment="Left" Height="23" Margin="138,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <TextBox x:Name="txtFolhaNome" HorizontalAlignment="Left" Height="23" Margin="138,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
         <Label x:Name="lblQtdeHoraNormal" Content="QUANTIDADE HORA NORMAL:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblQtdeHoraExtra" Content="QUANTIDADE HORA EXTRA:" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtQtdeHrNormal" HorizontalAlignment="Left" Height="23" Margin="190,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
-        <TextBox x:Name="txtQtdeHrExtra" HorizontalAlignment="Left" Height="23" Margin="190,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="txtFolhaQtHrNormal" HorizontalAlignment="Left" Height="23" Margin="190,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="txtFolhaQtHrExtra" HorizontalAlignment="Left" Height="23" Margin="190,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
         <Label x:Name="lblVlrHrNormal" Content="VALOR HORA NORMAL:" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblVlrHrExtra" Content="VALOR HORA EXTRA:" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtVlrHrNormal" HorizontalAlignment="Left" Height="23" Margin="190,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtVlrHrExtra" HorizontalAlignment="Left" Height="23" Margin="190,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaVlrHrNormal" HorizontalAlignment="Left" Height="23" Margin="190,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaVlrHrExtra" HorizontalAlignment="Left" Height="23" Margin="190,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblVlrInss" Content="VALOR INSS:" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblVlrImpRenda" Content="VALOR IR:" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtVlrInss" HorizontalAlignment="Left" Height="23" Margin="190,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtVlrImpRenda" HorizontalAlignment="Left" Height="23" Margin="190,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaVlrInss" HorizontalAlignment="Left" Height="23" Margin="190,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaVlrIR" HorizontalAlignment="Left" Height="23" Margin="190,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblVlrBrutoSalario" Content="VALOR BRUTO:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
         <Label x:Name="lblVlrLiqSalario" Content="VALOR LIQUIDO:" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtVlrBrutoSalario" HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtVlrLiqSalario" HorizontalAlignment="Left" Height="23" Margin="190,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSalvarSalario" Content="SALVAR" HorizontalAlignment="Left" Margin="354,307,0,0" VerticalAlignment="Top" Width="55" FontSize="8"/>
+        <TextBox x:Name="txtFolhaVlrSalBruto" HorizontalAlignment="Left" Height="23" Margin="190,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaVlrSalLiq" HorizontalAlignment="Left" Height="23" Margin="190,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSalvarSalario" Content="SALVAR" HorizontalAlignment="Left" Margin="354,307,0,0" VerticalAlignment="Top" Width="55" FontSize="8" Click="btnSalvarSalario_Click"/>
         <Label x:Name="lblMesRefSalario" Content="MÊS:" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblAnoRefSalario" Content="ANO:" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtMesRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtAnoRefSalario" HorizontalAlignment="Left" Height="23" Margin="190,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaMesRef" HorizontalAlignment="Left" Height="23" Margin="190,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFolhaAnoRef" HorizontalAlignment="Left" Height="23" Margin="190,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnVoltarMenu" Content="MENU CADASTRO" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="113" Click="btnVoltarMenu_Click"/>
 
     </Grid>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,5 +31,22 @@ namespace FolhaPagamento
             Cadastar cad = new Cadastar();
             cad.ShowDialog();
         }
+
+        private void btnSalvarCadDepto_Click(object sender, RoutedEventArgs e)
+        {
+            SalvarDepartamento();
+        }
+
+        private void SalvarDepartamento()
+        {
+            Departamento depart = new Departamento();
+
+            depart.NomeDepartamento = txtNomeDepto.Text;
+            depart.LocalDepartamento = txtLocalDepto.Text;
+
+            DepartamentoController.SalvarDepartamento(depart);
+        }
+
+
     }
 }

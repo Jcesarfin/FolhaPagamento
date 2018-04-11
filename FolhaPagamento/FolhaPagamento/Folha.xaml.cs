@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +30,32 @@ namespace FolhaPagamento
         {
             Cadastar cad = new Cadastar();
             cad.ShowDialog();
+        }
+
+        private void btnSalvarSalario_Click(object sender, RoutedEventArgs e)
+        {
+            SalvarSalario();
+        }
+
+        private void SalvarSalario()
+        {
+            Salario sal = new Salario();
+            sal._Empregado.CPF = txtFolhaCpf.Text;
+            sal._Empregado.Nome = txtFolhaNome.Text;
+            sal.QtdeHoraNormal = Convert.ToInt16(txtFolhaQtHrNormal.Text);
+            sal.QtdeHoraExtra = Convert.ToInt16(txtFolhaQtHrExtra.Text);
+            sal.VlrHoraNormal = Convert.ToInt16(txtFolhaVlrHrNormal.Text);
+            sal.VlrHoraExtra = Convert.ToInt16(txtFolhaVlrHrExtra.Text);
+            sal.SalarioBruto = Convert.ToInt16(txtFolhaVlrSalBruto.Text);
+            sal.VlrInss = Convert.ToInt16(txtFolhaVlrInss.Text);
+            sal.VlrIR = Convert.ToInt16(txtFolhaVlrIR.Text);
+            sal.SalarioLiquido = Convert.ToInt16(txtFolhaVlrSalLiq);
+            sal.Mes = Convert.ToInt16(txtFolhaMesRef.Text);
+            sal.Ano = Convert.ToInt16(txtFolhaAnoRef.Text);
+
+
+            SalarioController.SalvarSalario(sal);
+
         }
     }
 }

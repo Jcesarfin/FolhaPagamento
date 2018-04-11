@@ -5,3 +5,8 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\obj\Debug\Controllers.dll
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\obj\Debug\Controllers.pdb
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\Debug\EntityFramework.dll
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\Debug\EntityFramework.xml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\Controllers\bin\Debug\EntityFramework.SqlServer.xml

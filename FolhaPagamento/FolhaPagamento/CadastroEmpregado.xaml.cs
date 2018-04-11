@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +36,29 @@ namespace FolhaPagamento
         {
             CadastroEndereco cad = new CadastroEndereco();
             cad.ShowDialog();
+        }
+
+        private void btnSalvarCadEmpregado_Click(object sender, RoutedEventArgs e)
+        {
+            SalvarEmpregado();
+        }
+
+        private void SalvarEmpregado()
+        {
+            Empregado emp = new Empregado();
+
+            emp.Nome = txtEmprNome.Text;
+            emp.Identidade = txtEmprIdent.Text;
+            emp.CPF = txtEmprCpf.Text;
+            emp.DataNascimento = Convert.ToDateTime(txtEmprNasc.Text);
+            emp.DataAdmissão = Convert.ToDateTime(txtEmprAdm.Text);
+            emp.DataDemissão = Convert.ToDateTime(txtEmprDemi.Text);
+            emp._Departamento.NomeDepartamento = cbxEmprDepto.Text;
+            emp._Cargo.NomeCargo = cbxEmprCargo.Text;
+            
+
+            EmpregadoController.SalvarEmpregado(emp);
+
         }
     }
 }
