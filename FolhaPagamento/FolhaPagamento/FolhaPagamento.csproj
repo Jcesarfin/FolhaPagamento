@@ -76,6 +76,12 @@
     <Compile Include="Folha.xaml.cs">
       <DependentUpon>Folha.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelatorioCargo.xaml.cs">
+      <DependentUpon>RelatorioCargo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioDepto.xaml.cs">
+      <DependentUpon>RelatorioDepto.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RelatorioEmpregados.xaml.cs">
       <DependentUpon>RelatorioEmpregados.xaml</DependentUpon>
     </Compile>
@@ -145,6 +151,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Folha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatorioCargo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelatorioDepto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

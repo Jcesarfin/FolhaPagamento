@@ -34,6 +34,8 @@
         <TextBox x:Name="txtManutHrExtra" HorizontalAlignment="Left" Height="23" Margin="200,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
         <TextBox x:Name="txtManutVlrHrNormal" HorizontalAlignment="Left" Height="23" Margin="157,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtManutVlrHrExtra" HorizontalAlignment="Left" Height="23" Margin="157,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnFolhaEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="347,271,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnFolhaExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="347,302,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

@@ -11,18 +11,15 @@ namespace Models
         public int SalarioID { get; set; }
         public int QtdeHoraNormal { get; set; }
         public int QtdeHoraExtra { get; set; }
-        public float VlrHoraNormal { get; set; }
-        public float VlrHoraExtra { get; set; }
-        public float VlrInss { get; set; }
-        public float VlrIR { get; set; }
-        public float SalarioBruto { get; set; }
-        public float SalarioLiquido { get; set; }
+        public double VlrHoraNormal { get; set; }
+        public double VlrHoraExtra { get; set; }
+        public double VlrInss { get; set; }
+        public double VlrIR { get; set; }
+        public double SalarioBruto { get; set; }
+        public double SalarioLiquido { get; set; }
         public int Mes { get; set; }
         public int Ano { get; set; }
-
-
-        public int EmpregadoID { get; set; }
-        public Empregado _Empregado { get; set; }
+            
 
         public int CargoID { get; set; }
         public Cargo _Cargo { get; set; }

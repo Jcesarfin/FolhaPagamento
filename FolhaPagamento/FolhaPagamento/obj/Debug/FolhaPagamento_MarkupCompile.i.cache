@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\App.xaml
-13-494618762
+15-1945709403
 
-21-956204530
+23582182719
 182027884764
-Cadastar.xaml;CadastroCargo.xaml;CadastroDepartamento.xaml;CadastroEmpregado.xaml;CadastroEndereco.xaml;ManutencaoCadastro.xaml;ManutencaoFolha.xaml;ManutencaoGeral.xaml;MainWindow.xaml;Folha.xaml;RelatorioEmpregados.xaml;RelatorioFolha.xaml;RelatorioGeral.xaml;
+Cadastar.xaml;CadastroCargo.xaml;CadastroDepartamento.xaml;CadastroEmpregado.xaml;CadastroEndereco.xaml;ManutencaoCadastro.xaml;ManutencaoFolha.xaml;ManutencaoGeral.xaml;MainWindow.xaml;Folha.xaml;RelatorioCargo.xaml;RelatorioDepto.xaml;RelatorioEmpregados.xaml;RelatorioFolha.xaml;RelatorioGeral.xaml;
 
 False
 

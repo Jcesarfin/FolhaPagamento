@@ -15,53 +15,74 @@ namespace Controllers
 
         public static void SalvarDepartamento (Departamento departamento)
         {
-            MeuContexto bancoDados = new MeuContexto();
+            ContextoSingleton.Instancia.Departamentos.Add(departamento);
+            ContextoSingleton.Instancia.SaveChanges();
 
-            bancoDados.Departamentos.Add(departamento);
-            bancoDados.SaveChanges();
-            
         }
 
         // SELECT *
 
         public static List<Departamento> ListarDepartamentos()
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Departamentos.ToList();
+           return ContextoSingleton.Instancia.Departamentos.ToList();
         }
+
+       
+
+        
 
         // SELECT BY ID
 
         public static Departamento PesquisarPorID (int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Departamentos.Find(id);
+           return ContextoSingleton.Instancia.Departamentos.Find(id);
         }
+
+
+        public Departamento PesquisarPorNome(string nome)
+        {
+            var c = from x in ContextoSingleton.Instancia.Departamentos
+                    where x.NomeDepartamento.ToLower().Contains(nome.Trim().ToLower())
+                    select x;
+
+            if (c != null)
+                return c.FirstOrDefault();
+            else
+                return null;
+        }
+
+        
+
 
         // EDIT
 
-        public static void EditarDepartamento (int id, Departamento novoDepartamento)
+        public static void EditarDepartamento(int id, Departamento novoDepartamento)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Departamento departamentoAtual = bancoDados.Departamentos.Find(id);
+            
+           Departamento departamentoEditar = PesquisarPorID(id);
 
-            departamentoAtual.NomeDepartamento = novoDepartamento.NomeDepartamento;
-            departamentoAtual.LocalDepartamento = novoDepartamento.LocalDepartamento;
+            if (departamentoEditar != null)
+            {
+                departamentoEditar.NomeDepartamento = novoDepartamento.NomeDepartamento;
+                departamentoEditar.LocalDepartamento = novoDepartamento.LocalDepartamento;
 
-            bancoDados.Entry(departamentoAtual).State = System.Data.Entity.EntityState.Modified;
-            bancoDados.SaveChanges();
+                ContextoSingleton.Instancia.Entry(departamentoEditar).State = System.Data.Entity.EntityState.Modified;
 
+                ContextoSingleton.Instancia.SaveChanges();
+
+
+            }
         }
 
         // DELETE
 
         public static void ExcluirDepartamento (int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Departamento departamentoAtual = bancoDados.Departamentos.Find(id);
+            Departamento d = ContextoSingleton.Instancia.Departamentos.Find(id);
+            ContextoSingleton.Instancia.Entry(d).State = System.Data.Entity.EntityState.Deleted;
 
-            bancoDados.Entry(departamentoAtual).State = System.Data.Entity.EntityState.Deleted;
-            bancoDados.SaveChanges();
+            ContextoSingleton.Instancia.SaveChanges();
+            
 
         }
         

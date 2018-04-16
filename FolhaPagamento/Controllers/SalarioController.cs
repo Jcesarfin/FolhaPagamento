@@ -14,64 +14,85 @@ namespace Controllers
 
         public static void SalvarSalario(Salario salario)
         {
-            MeuContexto bancoDados = new MeuContexto();
+            ContextoSingleton.Instancia.Salarios.Add(salario);
+            ContextoSingleton.Instancia.SaveChanges();
 
-            bancoDados.Salarios.Add(salario);
-            bancoDados.SaveChanges();
         }
 
         // SELECT *
 
         public static List<Salario> ListarSalarios()
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Salarios.ToList();
+           return ContextoSingleton.Instancia.Salarios.ToList();
+
         }
 
         // SELECT BY ID
 
         public static Salario PesquisarPorID(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Salarios.Find(id);
+            return ContextoSingleton.Instancia.Salarios.Find(id);
         }
+
+        //public Salario PesquisarPorNome(string nome)
+        //{
+        //    var c = from x in ContextoSingleton.Instancia.Salarios
+        //            where x.Nome.ToLower().Contains(nome.Trim().ToLower()) // ver relacionamento com empregado
+      //              select x;
+
+       //     if (c != null)
+         //       return c.FirstOrDefault();
+         //   else
+          //      return null;
+       // }
+
 
         // EDIT
 
-        public static void EditarSalario(int id, Salario novoSalario)
+        public static void EditarSalario(int id, Salario novoSalario, Empregado novoEmpregado)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Salario salarioAtual = bancoDados.Salarios.Find(id);
+            
+            Salario salarioEditar = PesquisarPorID(id);
 
-            // ver pesquisa cpf
-            salarioAtual._Empregado.Nome = novoSalario._Empregado.Nome;
-            salarioAtual.QtdeHoraNormal = novoSalario.QtdeHoraNormal;
-            salarioAtual.QtdeHoraExtra = novoSalario.QtdeHoraExtra;
-            salarioAtual.VlrHoraNormal = novoSalario.VlrHoraNormal;
-            salarioAtual.VlrHoraExtra = novoSalario.VlrHoraExtra;
-            salarioAtual.VlrInss = novoSalario.VlrInss;
-            salarioAtual.VlrIR = novoSalario.VlrIR;
-            salarioAtual.SalarioBruto = novoSalario.SalarioBruto;
-            salarioAtual.SalarioLiquido = novoSalario.SalarioLiquido;
-            salarioAtual.Mes = novoSalario.Mes;
-            salarioAtual.Ano = novoSalario.Ano;
+            if(salarioEditar != null)
 
-            bancoDados.Entry(salarioAtual).State = System.Data.Entity.EntityState.Modified;
-            bancoDados.SaveChanges();
+            {
 
+                // ver pesquisa cpf
+                //salarioEditar._Empregado.Nome = novoSalario._Empregado.Nome;
+                salarioEditar.QtdeHoraNormal = novoSalario.QtdeHoraNormal;
+                salarioEditar.QtdeHoraExtra = novoSalario.QtdeHoraExtra;
+                salarioEditar.VlrHoraNormal = novoSalario.VlrHoraNormal;
+                salarioEditar.VlrHoraExtra = novoSalario.VlrHoraExtra;
+                salarioEditar.VlrInss = novoSalario.VlrInss;
+                salarioEditar.VlrIR = novoSalario.VlrIR;
+                salarioEditar.SalarioBruto = novoSalario.SalarioBruto;
+                salarioEditar.SalarioLiquido = novoSalario.SalarioLiquido;
+                salarioEditar.Mes = novoSalario.Mes;
+                salarioEditar.Ano = novoSalario.Ano;
+
+                ContextoSingleton.Instancia.Entry(salarioEditar).State = System.Data.Entity.EntityState.Modified;
+
+                ContextoSingleton.Instancia.SaveChanges();
+
+            }
         }
 
         // DELETE
 
         public static void ExcluirSalario(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Salario salarioAtual = bancoDados.Salarios.Find(id);
+            
+            Salario s = ContextoSingleton.Instancia.Salarios.Find(id);
+            ContextoSingleton.Instancia.Entry(s).State = System.Data.Entity.EntityState.Deleted;
 
-            bancoDados.Entry(salarioAtual).State = System.Data.Entity.EntityState.Deleted;
-            bancoDados.SaveChanges();
+            ContextoSingleton.Instancia.SaveChanges();
+
 
         }
+
+
+
 
     }
 }

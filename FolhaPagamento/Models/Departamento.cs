@@ -12,6 +12,5 @@ namespace Models
         public String NomeDepartamento { get; set; }
         public String LocalDepartamento { get; set; }
 
-        
     }
 }

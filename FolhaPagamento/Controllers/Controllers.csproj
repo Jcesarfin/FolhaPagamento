@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CargoController.cs" />
+    <Compile Include="ContextoSingleton.cs" />
     <Compile Include="DepartamentoController.cs" />
     <Compile Include="EmpregadoController.cs" />
     <Compile Include="EnderecoController.cs" />

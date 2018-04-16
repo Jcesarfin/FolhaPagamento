@@ -40,8 +40,8 @@ namespace FolhaPagamento
         private void SalvarSalario()
         {
             Salario sal = new Salario();
-            sal._Empregado.CPF = txtFolhaCpf.Text;
-            sal._Empregado.Nome = txtFolhaNome.Text;
+            //sal._Empregado.CPF = txtFolhaCpf.Text;
+            //sal._Empregado.Nome = txtFolhaNome.Text;
             sal.QtdeHoraNormal = Convert.ToInt16(txtFolhaQtHrNormal.Text);
             sal.QtdeHoraExtra = Convert.ToInt16(txtFolhaQtHrExtra.Text);
             sal.VlrHoraNormal = Convert.ToInt16(txtFolhaVlrHrNormal.Text);

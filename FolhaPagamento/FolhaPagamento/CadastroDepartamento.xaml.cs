@@ -35,6 +35,7 @@ namespace FolhaPagamento
         private void btnSalvarCadDepto_Click(object sender, RoutedEventArgs e)
         {
             SalvarDepartamento();
+            
         }
 
         private void SalvarDepartamento()

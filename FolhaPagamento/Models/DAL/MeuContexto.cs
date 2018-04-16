@@ -12,6 +12,7 @@ namespace Models.DAL
     {
         public MeuContexto() : base("strConn")
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MeuContexto>());
 
         }
 

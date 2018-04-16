@@ -42,5 +42,17 @@ namespace FolhaPagamento
             MainWindow cad = new MainWindow();
             cad.ShowDialog();
         }
+
+        private void btbRelatDepto_Click(object sender, RoutedEventArgs e)
+        {
+            RelatorioDepto relat = new RelatorioDepto();
+            relat.ShowDialog();
+        }
+
+        private void btbRelatCargos_Click(object sender, RoutedEventArgs e)
+        {
+            RelatorioCargo relat = new RelatorioCargo();
+            relat.ShowDialog();
+        }
     }
 }

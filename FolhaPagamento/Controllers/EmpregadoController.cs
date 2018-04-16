@@ -15,60 +15,81 @@ namespace Controllers
 
         public static void SalvarEmpregado(Empregado empregado)
         {
-            MeuContexto bancoDados = new MeuContexto();
+            
+            ContextoSingleton.Instancia.Empregados.Add(empregado);
+            ContextoSingleton.Instancia.SaveChanges();      //  EXCEPTIONNNNNNNNNNNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-            bancoDados.Empregados.Add(empregado);
-            bancoDados.SaveChanges();
+            
         }
 
         // SELECT *
 
         public static List<Empregado> ListarEmpregados()
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Empregados.ToList();
+            return ContextoSingleton.Instancia.Empregados.ToList();
         }
+
 
         // SELECT BY ID
 
         public static Empregado PesquisarPorID(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Empregados.Find(id);
+           
+            return ContextoSingleton.Instancia.Empregados.Find(id);
+
         }
+
+        public Empregado PesquisarPorNome(string nome)
+        {
+            var c = from x in ContextoSingleton.Instancia.Empregados
+                    where x.Nome.ToLower().Contains(nome.Trim().ToLower())
+                    select x;
+
+            if (c != null)
+                return c.FirstOrDefault();
+            else
+                return null;
+        }
+
 
         // EDIT
 
-        public static void EditarEmpregado(int id, Empregado novoEmpregado)
+        public static void EditarEmpregado(int id, Empregado novoEmpregado, Departamento novoDepartamento, Cargo novoCargo)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Empregado empregadoAtual = bancoDados.Empregados.Find(id);
+            Empregado empregadoEditar = PesquisarPorID(id);
 
-            empregadoAtual.Nome = novoEmpregado.Nome;
-            empregadoAtual.Identidade = novoEmpregado.Identidade;
-            empregadoAtual.CPF = novoEmpregado.CPF;
-            empregadoAtual.DataNascimento = novoEmpregado.DataNascimento;
-            empregadoAtual.DataAdmissão = novoEmpregado.DataAdmissão;
-            empregadoAtual.DataDemissão = novoEmpregado.DataDemissão;
-            empregadoAtual._Departamento.NomeDepartamento = novoEmpregado._Departamento.NomeDepartamento;
-            empregadoAtual._Cargo.NomeCargo = novoEmpregado._Cargo.NomeCargo;
-            // VER TELA MANUTENÇÃO FALTAM MAIS ITENS
+            if (empregadoEditar != null)
+
+            {
+                empregadoEditar.Nome = novoEmpregado.Nome;
+                empregadoEditar.Identidade = novoEmpregado.Identidade;
+                empregadoEditar.CPF = novoEmpregado.CPF;
+                //empregadoEditar.DataNascimento = novoEmpregado.DataNascimento;
+                //empregadoEditar.DataAdmissão = novoEmpregado.DataAdmissão;
+                //empregadoEditar.DataDemissão = novoEmpregado.DataDemissão;
+                empregadoEditar.Departamento = novoDepartamento.NomeDepartamento;
+                empregadoEditar.Cargo = novoCargo.NomeCargo;
+                // VER TELA MANUTENÇÃO FALTAM MAIS ITENS
 
 
-            bancoDados.Entry(empregadoAtual).State = System.Data.Entity.EntityState.Modified;
-            bancoDados.SaveChanges();
+                ContextoSingleton.Instancia.Entry(empregadoEditar).State = System.Data.Entity.EntityState.Modified;
 
+                ContextoSingleton.Instancia.SaveChanges();
+
+
+
+            }
         }
 
         // DELETE
 
-        public static void ExcluirEndereco(int id)
+        public static void ExcluirEmpregado(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Empregado empregadoAtual = bancoDados.Empregados.Find(id);
+            
+            Empregado e = ContextoSingleton.Instancia.Empregados.Find(id);
+            ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
 
-            bancoDados.Entry(empregadoAtual).State = System.Data.Entity.EntityState.Deleted;
-            bancoDados.SaveChanges();
+            ContextoSingleton.Instancia.SaveChanges();
 
         }
 

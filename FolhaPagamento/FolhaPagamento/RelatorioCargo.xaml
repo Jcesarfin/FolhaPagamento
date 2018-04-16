@@ -1,0 +1,31 @@
+﻿<Window x:Name="telaRelatCargos" x:Class="FolhaPagamento.RelatorioCargo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FolhaPagamento"
+        mc:Ignorable="d"
+        Title="RELATÓRIOS CARGOS" Height="300" Width="300" Background="#FFF17272">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="193*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnGerarRelatCargo" Content="LISTAR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="44" FontSize="9" Click="btnGerarRelatCargo_Click"/>
+        <Button x:Name="btbVoltarRelat" Content="VOLTAR" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Width="46" FontSize="9" Click="btbVoltarRelat_Click"/>
+        <Label x:Name="lblRelatNomeCargo" Content="NOME" HorizontalAlignment="Left" Margin="59,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblRelatVlrHrCargo" Content="VALOR HORA" Grid.Column="1" HorizontalAlignment="Left" Margin="27,26,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Label x:Name="label" HorizontalAlignment="Left" Margin="77,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRelatNomeCargo" HorizontalAlignment="Left" Height="23" Margin="16,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRelatVlrHrCargo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="16,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

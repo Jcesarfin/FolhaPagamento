@@ -10,7 +10,7 @@ namespace Models
     {
         public int CargoID { get; set; }
         public String NomeCargo { get; set; }
-        public float ValorHora { get; set; }
+        public double ValorHora { get; set; }
 
         
     }

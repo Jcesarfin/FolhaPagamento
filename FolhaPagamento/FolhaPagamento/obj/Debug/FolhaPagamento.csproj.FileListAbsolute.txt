@@ -45,3 +45,5 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\b
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\bin\Debug\EntityFramework.xml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioDepto.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioDepto.baml

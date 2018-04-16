@@ -9,7 +9,9 @@
     <Grid>
         <Button x:Name="btbRelatEmpreg" Content="EMPREGADOS" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="187" Click="btbRelatEmpreg_Click" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btbRelatFolha" Content="FOLHA PAGAMENTO" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="187" Click="btbRelatFolha_Click" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="btbVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="88" Click="btbVoltarMenu_Click" FontWeight="Bold"/>
+        <Button x:Name="btbVoltarMenu" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="88" Click="btbVoltarMenu_Click" FontWeight="Bold"/>
+        <Button x:Name="btbRelatDepto" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="187" FontWeight="Bold" FontSize="16" Click="btbRelatDepto_Click"/>
+        <Button x:Name="btbRelatCargos" Content="CARGOS" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="187" FontWeight="Bold" FontSize="16" Click="btbRelatCargos_Click"/>
 
     </Grid>
 </Window>

@@ -35,6 +35,7 @@ namespace FolhaPagamento
         private void btnSalvarCadCargo_Click(object sender, RoutedEventArgs e)
         {
             SalvarCargo();
+            
         }
 
         private void SalvarCargo()
@@ -42,7 +43,7 @@ namespace FolhaPagamento
             Cargo car = new Cargo();
 
             car.NomeCargo = txtNomeCargo.Text;
-            car.ValorHora = Convert.ToInt16(txtVlrHora.Text);
+            car.ValorHora = Convert.ToInt32(txtVlrHora.Text);
 
             CargoController.SalvarCargo(car);
         }

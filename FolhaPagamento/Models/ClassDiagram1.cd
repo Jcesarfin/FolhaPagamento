@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Models.Cargo">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Cargo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Departamento">
+    <Position X="14.25" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Departamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Empregado">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAMAgCAACAKAABKAAAAAAAAAAAECAwA=</HashCode>
+      <FileName>Empregado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Endereco">
+    <Position X="14.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAABAQI=</HashCode>
+      <FileName>Endereco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Models.Salario">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAoAAEAAAAAAABACgAAAIAEBAAIAAAACAAAAAgAgA=</HashCode>
+      <FileName>Salario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

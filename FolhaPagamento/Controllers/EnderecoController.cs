@@ -14,55 +14,71 @@ namespace Controllers
 
         public static void SalvarEndereco(Endereco endereco)
         {
-            MeuContexto bancoDados = new MeuContexto();
+            ContextoSingleton.Instancia.Enderecos.Add(endereco);
+            ContextoSingleton.Instancia.SaveChanges();
 
-            bancoDados.Enderecos.Add(endereco);
-            bancoDados.SaveChanges();
+
         }
 
         // SELECT *
 
         public static List<Endereco> ListarEnderecos()
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Enderecos.ToList();
+            return ContextoSingleton.Instancia.Enderecos.ToList();
         }
 
         // SELECT BY ID
 
         public static Endereco PesquisarPorID(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            return bancoDados.Enderecos.Find(id);
+           return ContextoSingleton.Instancia.Enderecos.Find(id);
         }
+
+
+        public Endereco PesquisarPorRua(string rua)
+        {
+            var c = from x in ContextoSingleton.Instancia.Enderecos
+                    where x.Rua.ToLower().Contains(rua.Trim().ToLower()) 
+                    select x;
+
+            if (c != null)
+                return c.FirstOrDefault();
+            else
+                return null;
+        }
+
+
 
         // EDIT
 
         public static void EditarEndereco(int id, Endereco novoEndereco)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Endereco enderecoAtual = bancoDados.Enderecos.Find(id);
+            Endereco enderecoEditar = PesquisarPorID(id);
 
-            enderecoAtual.Rua = novoEndereco.Rua;
-            enderecoAtual.Numero = novoEndereco.Numero;
-            enderecoAtual.Cep = novoEndereco.Cep;
-            enderecoAtual.Complemento = novoEndereco.Complemento;       
+            if (enderecoEditar != null)
 
-            bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Modified;
-            bancoDados.SaveChanges();
+            {
+                enderecoEditar.Rua = novoEndereco.Rua;
+                enderecoEditar.Numero = novoEndereco.Numero;
+                enderecoEditar.Cep = novoEndereco.Cep;
+                enderecoEditar.Complemento = novoEndereco.Complemento;
 
+                ContextoSingleton.Instancia.Entry(enderecoEditar).State = System.Data.Entity.EntityState.Modified;
+
+                ContextoSingleton.Instancia.SaveChanges();
+
+            }
         }
 
         // DELETE
 
         public static void ExcluirEndereco(int id)
         {
-            MeuContexto bancoDados = new MeuContexto();
-            Endereco enderecoAtual = bancoDados.Enderecos.Find(id);
+            Endereco e = ContextoSingleton.Instancia.Enderecos.Find(id);
+            ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
 
-            bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Deleted;
-            bancoDados.SaveChanges();
-
+            ContextoSingleton.Instancia.SaveChanges();
+            
         }
 
 

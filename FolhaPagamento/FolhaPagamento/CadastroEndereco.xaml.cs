@@ -34,6 +34,7 @@ namespace FolhaPagamento
 
         private void btnSalvarEndereco_Click(object sender, RoutedEventArgs e)
         {
+           
             SalvarEndereco();
         }
 
@@ -42,11 +43,13 @@ namespace FolhaPagamento
             Endereco end = new Endereco();
 
             end.Rua = txtEndRua.Text;
-            end.Numero = Convert.ToInt16(txtEndNum.Text);
-            end.Cep = Convert.ToInt16(txtEndCep.Text);
+            end.Numero = Convert.ToInt32(txtEndNum.Text);
+            end.Cep = Convert.ToInt32(txtEndCep.Text);
             end.Complemento = txtEndCompl.Text;
 
             EnderecoController.SalvarEndereco(end);
+
+            
 
             
         }
