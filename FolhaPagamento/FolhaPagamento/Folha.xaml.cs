@@ -29,7 +29,7 @@ namespace FolhaPagamento
         private void btnVoltarMenu_Click(object sender, RoutedEventArgs e)
         {
             Cadastar cad = new Cadastar();
-            cad.ShowDialog();
+            cad.Show();
         }
 
         private void btnSalvarSalario_Click(object sender, RoutedEventArgs e)
@@ -39,23 +39,46 @@ namespace FolhaPagamento
 
         private void SalvarSalario()
         {
+            EmpregadoController empC = new EmpregadoController();
+            Empregado emp = empC.PesquisarPorCpf(txtFolhaCpf.Text);
+            txtFolhaNome.Text = emp.Nome;
+
+            
             Salario sal = new Salario();
+
             //sal._Empregado.CPF = txtFolhaCpf.Text;
             //sal._Empregado.Nome = txtFolhaNome.Text;
-            sal.QtdeHoraNormal = Convert.ToInt16(txtFolhaQtHrNormal.Text);
-            sal.QtdeHoraExtra = Convert.ToInt16(txtFolhaQtHrExtra.Text);
-            sal.VlrHoraNormal = Convert.ToInt16(txtFolhaVlrHrNormal.Text);
-            sal.VlrHoraExtra = Convert.ToInt16(txtFolhaVlrHrExtra.Text);
-            sal.SalarioBruto = Convert.ToInt16(txtFolhaVlrSalBruto.Text);
-            sal.VlrInss = Convert.ToInt16(txtFolhaVlrInss.Text);
-            sal.VlrIR = Convert.ToInt16(txtFolhaVlrIR.Text);
-            sal.SalarioLiquido = Convert.ToInt16(txtFolhaVlrSalLiq);
-            sal.Mes = Convert.ToInt16(txtFolhaMesRef.Text);
-            sal.Ano = Convert.ToInt16(txtFolhaAnoRef.Text);
+            sal.QtdeHoraNormal = Convert.ToInt32(txtFolhaQtHrNormal.Text);
+            sal.QtdeHoraExtra = Convert.ToInt32(txtFolhaQtHrExtra.Text);
+            sal.VlrHoraNormal = Convert.ToInt32(txtFolhaVlrHrNormal.Text);
+            sal.VlrHoraExtra = Convert.ToInt32(txtFolhaVlrHrExtra.Text);
+            sal.SalarioBruto = Convert.ToInt32(txtFolhaVlrSalBruto.Text);
+            sal.VlrInss = Convert.ToInt32(txtFolhaVlrInss.Text);
+            sal.VlrIR = Convert.ToInt32(txtFolhaVlrIR.Text);
+            sal.SalarioLiquido = Convert.ToInt32(txtFolhaVlrSalLiq.Text);
+            sal.Mes = Convert.ToInt32(txtFolhaMesRef.Text);
+            sal.Ano = Convert.ToInt32(txtFolhaAnoRef.Text);
 
+                     
+            sal.EmpregadoID = emp.EmpregadoID;
 
             SalarioController.SalvarSalario(sal);
-
+             
         }
+
+        private void btnPesquisaCpf_Click(object sender, RoutedEventArgs e)
+        {
+            
+            EmpregadoController empC = new EmpregadoController();
+            Empregado emp = empC.PesquisarPorCpf(txtFolhaCpf.Text);
+            txtFolhaNome.Text = emp.Nome;
+
+            
+        }
+
+
+
+        
+    
     }
 }

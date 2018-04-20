@@ -42,12 +42,7 @@ namespace FolhaPagamento
             cad.ShowDialog();
         }
 
-        private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
-        {
-            CadastroEndereco cad = new CadastroEndereco();
-            cad.ShowDialog();
-        }
-
+       
 
         private void btnFolha_Click(object sender, RoutedEventArgs e)
         {

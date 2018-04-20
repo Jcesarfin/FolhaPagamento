@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="FOLHA PAGAMENTO" Background="#FFF17272">
+        Title="FOLHA PAGAMENTO" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Color x:Key="#FFF17272">#FFF06161</Color>
     </Window.Resources>
     <Grid Margin="0,0,2,-7">
         <Label x:Name="lblApSalCpfEmpregado" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFolhaCpf" HorizontalAlignment="Left" Height="23" Margin="138,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
-        <Button x:Name="btnPesquisaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="349,17,0,0" VerticalAlignment="Top" Width="60" FontSize="8"/>
+        <Button x:Name="btnPesquisaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="349,17,0,0" VerticalAlignment="Top" Width="60" FontSize="8" Click="btnPesquisaCpf_Click"/>
         <Label x:Name="lblNomeEmpSalario" Content="NOME EMPREGADO:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtFolhaNome" HorizontalAlignment="Left" Height="23" Margin="138,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
         <Label x:Name="lblQtdeHoraNormal" Content="QUANTIDADE HORA NORMAL:" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>

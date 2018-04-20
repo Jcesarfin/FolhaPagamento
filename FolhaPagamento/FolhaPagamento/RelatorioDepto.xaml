@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="RELATÓRIO DEPARTAMENTOS" Height="300" Width="300" Background="#FFF17272">
+        Title="RELATÓRIO DEPARTAMENTOS" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>

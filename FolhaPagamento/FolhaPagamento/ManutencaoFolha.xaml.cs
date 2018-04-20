@@ -28,13 +28,13 @@ namespace FolhaPagamento
         {
 
             MainWindow cad = new MainWindow();
-            cad.ShowDialog();
+            cad.Show();
         }
 
         private void btnVoltarMenuManut_Click(object sender, RoutedEventArgs e)
         {
             ManutencaoGeral manut = new ManutencaoGeral();
-            manut.ShowDialog();
+            manut.Show();
         }
     }
 }

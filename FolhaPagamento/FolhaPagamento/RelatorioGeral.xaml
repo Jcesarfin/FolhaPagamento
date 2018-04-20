@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="RELATÓRIOS" Background="#FFF17272">
+        Title="RELATÓRIOS" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="btbRelatEmpreg" Content="EMPREGADOS" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="187" Click="btbRelatEmpreg_Click" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btbRelatFolha" Content="FOLHA PAGAMENTO" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="187" Click="btbRelatFolha_Click" FontWeight="Bold" FontSize="16"/>

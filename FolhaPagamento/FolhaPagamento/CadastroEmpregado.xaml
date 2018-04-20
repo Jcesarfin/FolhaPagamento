@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Empregados" Background="#FFF17272">
+        Title="Cadastro de Empregados" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Color x:Key="#FFF17272">#FFDC7676</Color>
     </Window.Resources>
     <Grid Margin="0,0,0,-31">
-        <Label x:Name="lblTituloEmpregado" Content="INFORME OS DADOS:" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTituloEmpregado" Content="DADOS IDENTIFICAÇÃO:" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNomeEmpregado" Content="NOME:" HorizontalAlignment="Left" Margin="12,42,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblIdentidade" Content="NR. IDENTIDADE:" HorizontalAlignment="Left" Margin="12,64,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCPF" Content="NR. CPF:" HorizontalAlignment="Left" Margin="12,95,0,0" VerticalAlignment="Top"/>
@@ -23,15 +23,23 @@
         <TextBox x:Name="txtEmprNasc" HorizontalAlignment="Left" Height="23" Margin="134,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtEmprAdm" HorizontalAlignment="Left" Height="23" Margin="134,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtEmprDemi" HorizontalAlignment="Left" Height="23" Margin="134,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSalvarCadEmpregado" Content="SALVAR" HorizontalAlignment="Left" Margin="208,312,0,0" VerticalAlignment="Top" Width="58" FontSize="8" Click="btnSalvarCadEmpregado_Click"/>
-        <Button x:Name="btnMigrarCadEndereco" Content="CADASTRAR ENDEREÇO" HorizontalAlignment="Left" Margin="83,312,0,0" VerticalAlignment="Top" Width="110" FontSize="8" Click="btnMigrarCadEndereco_Click"/>
-        <Button x:Name="btnVoltarMenuCadastro" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="12,312,0,0" VerticalAlignment="Top" Width="66" FontSize="8" Click="btnVoltarMenuCadastro_Click"/>
+        <Button x:Name="btnSalvarCadEmpregado" Content="SALVAR" HorizontalAlignment="Left" Margin="196,453,0,0" VerticalAlignment="Top" Width="58" FontSize="8" Click="btnSalvarCadEmpregado_Click"/>
+        <Button x:Name="btnVoltarMenuCadastro" Content="VOLTAR MENU" HorizontalAlignment="Left" Margin="12,453,0,0" VerticalAlignment="Top" Width="66" FontSize="8" Click="btnVoltarMenuCadastro_Click"/>
         <Label x:Name="lblDeptoEmpregado" Content="DEPARTAMENTO" HorizontalAlignment="Left" Margin="12,240,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCargoEmpregado" Content="CARGO" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtEmpDepto" HorizontalAlignment="Left" Height="23" Margin="134,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtEmpCargo" HorizontalAlignment="Left" Height="23" Margin="134,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblEmpSexo" Content="SEXO:" HorizontalAlignment="Left" Margin="12,126,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtEmpSexo" HorizontalAlignment="Left" Height="23" Margin="134,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCadEnd" Content="DADOS ENDEREÇO:" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCadEndRua" Content="RUA:" HorizontalAlignment="Left" Margin="12,330,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCadEndNum" Content="NÚMERO:" HorizontalAlignment="Left" Margin="10,356,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCadEndCep" Content="CEP:" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCadEndCompl" Content="COMPLEMENTO:" HorizontalAlignment="Left" Margin="10,408,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCadEndRua" HorizontalAlignment="Left" Height="23" Margin="134,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCadEndNum" HorizontalAlignment="Left" Height="23" Margin="134,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCadEndCep" HorizontalAlignment="Left" Height="23" Margin="134,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCadEndCompl" HorizontalAlignment="Left" Height="23" Margin="134,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

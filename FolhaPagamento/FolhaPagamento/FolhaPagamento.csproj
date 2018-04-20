@@ -107,10 +107,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CadastroEndereco.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ManutencaoCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -142,9 +138,6 @@
     </Compile>
     <Compile Include="CadastroEmpregado.xaml.cs">
       <DependentUpon>CadastroEmpregado.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CadastroEndereco.xaml.cs">
-      <DependentUpon>CadastroEndereco.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

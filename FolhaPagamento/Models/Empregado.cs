@@ -13,14 +13,14 @@ namespace Models
         public String Identidade { get; set; }
         public String CPF { get; set; }
         public String Sexo { get; set; }
-        //public DateTime DataNascimento { get; set; }  
-        //public DateTime DataAdmissão { get; set; }
-        //public DateTime DataDemissão { get; set; }
+        public DateTime DataNascimento { get; set; }  
+        public DateTime DataAdmissão { get; set; }
+        public DateTime DataDemissão { get; set; }
         public String Departamento { get; set; }
         public String Cargo { get; set; }
 
         public int EnderecoID { get; set; }
-        public Endereco _Endereco { get; set; }
+        public virtual Endereco _Endereco { get; set; }
 
         //public int DepartamentoID { get; set; }
         //public Departamento _Departamento { get; set; }

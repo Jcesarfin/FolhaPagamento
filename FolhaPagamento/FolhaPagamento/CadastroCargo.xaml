@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="Cadastro de Cargos" Background="#FFF17272">
+        Title="Cadastro de Cargos" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Color x:Key="#FFF17272">#FFE25E5E</Color>
     </Window.Resources>

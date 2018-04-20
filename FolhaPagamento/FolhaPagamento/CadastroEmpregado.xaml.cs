@@ -29,14 +29,10 @@ namespace FolhaPagamento
         private void btnVoltarMenuCadastro_Click(object sender, RoutedEventArgs e)
         {
             Cadastar cad = new Cadastar();
-            cad.ShowDialog();
+            cad.Show();
         }
 
-        private void btnMigrarCadEndereco_Click(object sender, RoutedEventArgs e)
-        {
-            CadastroEndereco cad = new CadastroEndereco();
-            cad.ShowDialog();
-        }
+        
 
         private void btnSalvarCadEmpregado_Click(object sender, RoutedEventArgs e)
         {
@@ -45,22 +41,30 @@ namespace FolhaPagamento
 
         private void SalvarEmpregado()
         {
+            
+            Endereco end = new Endereco();
+
+            end.Rua = txtCadEndRua.Text;
+            end.Numero = Convert.ToInt32(txtCadEndNum.Text);
+            end.Cep = Convert.ToInt32(txtCadEndCep.Text);
+            end.Complemento = txtCadEndCompl.Text;
+
+            EnderecoController.SalvarEndereco(end);
+
             Empregado emp = new Empregado();
 
             emp.Nome = txtEmprNome.Text;
             emp.Identidade = txtEmprIdent.Text;
             emp.CPF = txtEmprCpf.Text;
             emp.Sexo = txtEmpSexo.Text;
-            //emp.DataNascimento = Convert.ToDateTime(txtEmprNasc.Text);
-            //emp.DataAdmissão = Convert.ToDateTime(txtEmprAdm.Text);
-            //emp.DataDemissão = Convert.ToDateTime(txtEmprDemi.Text);
+            emp.DataNascimento = Convert.ToDateTime(txtEmprNasc.Text);
+            emp.DataAdmissão = Convert.ToDateTime(txtEmprAdm.Text);
+            emp.DataDemissão = Convert.ToDateTime(txtEmprDemi.Text);
             emp.Departamento = txtEmpDepto.Text;
             emp.Cargo = txtEmpCargo.Text;
 
-           // Problema da Exceção pode estar no relacionamento com o Endereco!!!!            
-            //Endereco end = SalvarEndereco(); ////igual ao console mas dá erro qdo altera de void para static ....
-            //emp.EnderecoID = end.EnderecoID;
-
+             
+            emp.EnderecoID = end.EnderecoID;
 
             EmpregadoController.SalvarEmpregado(emp);
             

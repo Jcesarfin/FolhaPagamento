@@ -27,19 +27,19 @@ namespace FolhaPagamento
         private void btnManutCadastro_Click(object sender, RoutedEventArgs e)
         {
             ManutencaoCadastro manut = new ManutencaoCadastro();
-            manut.ShowDialog();
+            manut.Show();
         }
 
         private void btnManutFolha_Click(object sender, RoutedEventArgs e)
         {
             ManutencaoFolha manut = new ManutencaoFolha();
-            manut.ShowDialog();
+            manut.Show();
         }
 
         private void btnVoltarMenu_Click(object sender, RoutedEventArgs e)
         {
             MainWindow cad = new MainWindow();
-            cad.ShowDialog();
+            cad.Show();
         }
     }
 }

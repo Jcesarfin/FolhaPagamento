@@ -49,7 +49,7 @@ namespace Controllers
 
 
 
-        // EDIT
+        // EDIT -> NÃO UTILIZADO
 
         public static void EditarEndereco(int id, Endereco novoEndereco)
         {
@@ -70,11 +70,11 @@ namespace Controllers
             }
         }
 
-        // DELETE
+        // DELETE -> UTILIZADO
 
-        public static void ExcluirEndereco(int id)
+        public static void ExcluirEndereco(int EnderecoID)
         {
-            Endereco e = ContextoSingleton.Instancia.Enderecos.Find(id);
+            Endereco e = ContextoSingleton.Instancia.Enderecos.Find(EnderecoID);
             ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
 
             ContextoSingleton.Instancia.SaveChanges();

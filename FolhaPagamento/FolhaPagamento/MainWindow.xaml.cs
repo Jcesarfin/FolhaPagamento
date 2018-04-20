@@ -28,20 +28,20 @@ namespace FolhaPagamento
         private void btnCadastros_Click(object sender, RoutedEventArgs e)
         {
             Cadastar cad = new Cadastar();
-            cad.ShowDialog();
+            cad.Show();
 
         }
 
         private void btnManutencao_Click(object sender, RoutedEventArgs e)
         {
             ManutencaoGeral manut = new ManutencaoGeral();
-            manut.ShowDialog();
+            manut.Show();
         }
 
         private void btnRelatorios_Click(object sender, RoutedEventArgs e)
         {
             RelatorioGeral relat = new RelatorioGeral();
-            relat.ShowDialog();
+            relat.Show();
         }
     }
 }

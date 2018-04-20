@@ -27,7 +27,7 @@ namespace FolhaPagamento
         private void btbVoltarRelat_Click(object sender, RoutedEventArgs e)
         {
             RelatorioGeral relat = new RelatorioGeral();
-            relat.ShowDialog();
+            relat.Show();
         }
 
         private void btnGerarRelatCargo_Click(object sender, RoutedEventArgs e)

@@ -11,13 +11,13 @@ namespace Controllers
     public class EmpregadoController
     {
 
-        // INSERT
+        // INSERT 
 
         public static void SalvarEmpregado(Empregado empregado)
         {
             
             ContextoSingleton.Instancia.Empregados.Add(empregado);
-            ContextoSingleton.Instancia.SaveChanges();      //  EXCEPTIONNNNNNNNNNNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            ContextoSingleton.Instancia.SaveChanges();      
 
             
         }
@@ -30,7 +30,7 @@ namespace Controllers
         }
 
 
-        // SELECT BY ID
+        // SELECT BY ID - NÃO UTILIZADA
 
         public static Empregado PesquisarPorID(int id)
         {
@@ -39,10 +39,12 @@ namespace Controllers
 
         }
 
-        public Empregado PesquisarPorNome(string nome)
+        // SELECT BY NAME - UTILIZADA NA FOLHA E NA MANUTENÇÃO EMPREGADO
+
+        public Empregado PesquisarPorCpf(string cpf)
         {
             var c = from x in ContextoSingleton.Instancia.Empregados
-                    where x.Nome.ToLower().Contains(nome.Trim().ToLower())
+                    where x.CPF.ToLower().Contains(cpf.Trim().ToLower())
                     select x;
 
             if (c != null)
@@ -52,9 +54,9 @@ namespace Controllers
         }
 
 
-        // EDIT
+        // EDIT  -> UTILIZADO
 
-        public static void EditarEmpregado(int id, Empregado novoEmpregado, Departamento novoDepartamento, Cargo novoCargo)
+        public static void EditarEmpregado(int id, Empregado novoEmpregado, Endereco novoEndereco)
         {
             Empregado empregadoEditar = PesquisarPorID(id);
 
@@ -64,12 +66,16 @@ namespace Controllers
                 empregadoEditar.Nome = novoEmpregado.Nome;
                 empregadoEditar.Identidade = novoEmpregado.Identidade;
                 empregadoEditar.CPF = novoEmpregado.CPF;
-                //empregadoEditar.DataNascimento = novoEmpregado.DataNascimento;
-                //empregadoEditar.DataAdmissão = novoEmpregado.DataAdmissão;
-                //empregadoEditar.DataDemissão = novoEmpregado.DataDemissão;
-                empregadoEditar.Departamento = novoDepartamento.NomeDepartamento;
-                empregadoEditar.Cargo = novoCargo.NomeCargo;
-                // VER TELA MANUTENÇÃO FALTAM MAIS ITENS
+                empregadoEditar.DataNascimento = novoEmpregado.DataNascimento;
+                empregadoEditar.DataAdmissão = novoEmpregado.DataAdmissão;
+                empregadoEditar.DataDemissão = novoEmpregado.DataDemissão;
+                empregadoEditar.Departamento = novoEmpregado.Departamento;
+                empregadoEditar.Cargo = novoEmpregado.Cargo;
+
+                empregadoEditar._Endereco.Rua = novoEndereco.Rua;
+                empregadoEditar._Endereco.Numero = novoEndereco.Numero;
+                empregadoEditar._Endereco.Cep = novoEndereco.Cep;
+                empregadoEditar._Endereco.Complemento = novoEndereco.Complemento;
 
 
                 ContextoSingleton.Instancia.Entry(empregadoEditar).State = System.Data.Entity.EntityState.Modified;
@@ -81,12 +87,12 @@ namespace Controllers
             }
         }
 
-        // DELETE
+        // DELETE -> UTILIZADO
 
-        public static void ExcluirEmpregado(int id)
+        public static void ExcluirEmpregado(int EmpregadoID)
         {
             
-            Empregado e = ContextoSingleton.Instancia.Empregados.Find(id);
+            Empregado e = ContextoSingleton.Instancia.Empregados.Find(EmpregadoID);
             ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
 
             ContextoSingleton.Instancia.SaveChanges();

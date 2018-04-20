@@ -11,7 +11,6 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\o
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroCargo.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroDepartamento.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroEmpregado.g.cs
-C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroEndereco.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\MainWindow.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\App.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\FolhaPagamento_MarkupCompile.cache
@@ -20,7 +19,6 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\o
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroCargo.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroDepartamento.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroEmpregado.baml
-C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\CadastroEndereco.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\MainWindow.baml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\FolhaPagamento.g.resources
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\FolhaPagamento.Properties.Resources.resources
@@ -47,3 +45,5 @@ C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\b
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioDepto.g.cs
 C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioDepto.baml
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioCargo.g.cs
+C:\Users\João Cesar\Source\Repos\FolhaPagamento\FolhaPagamento\FolhaPagamento\obj\Debug\RelatorioCargo.baml

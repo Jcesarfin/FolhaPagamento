@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,13 +29,85 @@ namespace FolhaPagamento
         private void btnVoltarManutGeral_Click(object sender, RoutedEventArgs e)
         {
             ManutencaoGeral manut = new ManutencaoGeral();
-            manut.ShowDialog();
+            manut.Show();
         }
 
         private void btnVoltarMenuPrinc_Click(object sender, RoutedEventArgs e)
         {
             Cadastar cad = new Cadastar();
-            cad.ShowDialog();
+            cad.Show();
+        }
+
+        private void btnPesqEmpCpf_Click(object sender, RoutedEventArgs e)
+        {
+            EmpregadoController empC = new EmpregadoController();
+            Empregado emp = empC.PesquisarPorCpf(txtConsEmpCpf.Text);
+
+            txtConsNomeEmp.Text = emp.Nome;
+            txtConsIdentEmp.Text = emp.Identidade;
+            txtConsCpfEmp.Text = emp.CPF;
+            txtConsDtNascEmp.Text = Convert.ToString(emp.DataNascimento);
+            txtConsDtAdmEmp.Text = Convert.ToString(emp.DataAdmissão);
+            txtConsDtDemEmp.Text = Convert.ToString(emp.DataDemissão);
+            txtConsDeptoEmp.Text = emp.Departamento;
+            txtConsCargoEmp.Text = emp.Cargo;
+
+            txtConsRuaEmp.Text = emp._Endereco.Rua;
+            txtConsNumEmp.Text = Convert.ToString(emp._Endereco.Numero);
+            txtConsCepEmp.Text = Convert.ToString(emp._Endereco.Cep);
+            txtConsComplEmp.Text = emp._Endereco.Complemento;
+
+        }
+
+        private void btnManutEditar_Click(object sender, RoutedEventArgs e)
+        {
+            EmpregadoController empC = new EmpregadoController();
+            Empregado emp = empC.PesquisarPorCpf(txtConsEmpCpf.Text);            
+            
+            Empregado novoEmp = new Empregado();
+            novoEmp.EmpregadoID = emp.EmpregadoID;
+            novoEmp._Endereco = new Endereco();
+
+            
+            novoEmp.Nome = txtConsNomeEmp.Text;
+            novoEmp.Identidade = txtConsIdentEmp.Text;
+            novoEmp.CPF = txtConsCpfEmp.Text;
+            novoEmp.DataNascimento = Convert.ToDateTime(txtConsDtNascEmp.Text);
+            novoEmp.DataAdmissão = Convert.ToDateTime(txtConsDtAdmEmp.Text);
+            novoEmp.DataDemissão = Convert.ToDateTime(txtConsDtDemEmp.Text);
+            novoEmp.Departamento = txtConsDeptoEmp.Text;
+            novoEmp.Cargo = txtConsCargoEmp.Text;
+
+            
+
+            novoEmp._Endereco.Rua = txtConsRuaEmp.Text;
+            novoEmp._Endereco.Numero = Convert.ToInt32(txtConsNumEmp.Text);
+            novoEmp._Endereco.Cep = Convert.ToInt32(txtConsCepEmp.Text);
+            novoEmp._Endereco.Complemento = txtConsComplEmp.Text;
+
+
+            novoEmp.EnderecoID = novoEmp.EmpregadoID;
+
+            EmpregadoController.EditarEmpregado(novoEmp.EmpregadoID, novoEmp, novoEmp._Endereco);           
+            
+        }
+
+        private void btbManutExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            EmpregadoController empC = new EmpregadoController();
+            Empregado emp = empC.PesquisarPorCpf(txtConsEmpCpf.Text);
+
+            Empregado em = new Empregado();
+            em.EmpregadoID = emp.EmpregadoID;
+           
+            Endereco end = new Endereco();
+            end.EnderecoID = emp.EmpregadoID;
+
+            EmpregadoController.ExcluirEmpregado(em.EmpregadoID);
+            EnderecoController.ExcluirEndereco(end.EnderecoID);
+
+
+
         }
     }
 }

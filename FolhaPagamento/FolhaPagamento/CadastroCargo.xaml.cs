@@ -29,7 +29,7 @@ namespace FolhaPagamento
         private void btnVoltarMenu_Click(object sender, RoutedEventArgs e)
         {
             Cadastar cad = new Cadastar();
-            cad.ShowDialog();
+            cad.Show();
          }
 
         private void btnSalvarCadCargo_Click(object sender, RoutedEventArgs e)

@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FolhaPagamento"
         mc:Ignorable="d"
-        Title="MANUTENÇÃO FOLHA PAGAMENTO" Background="#FFF17272">
+        Title="MANUTENÇÃO FOLHA PAGAMENTO" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="lblManutFolhaCpf" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtManutFolhaCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnConsFolhaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="473,16,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="lblManutFolhaNome" Content="NOME:" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutFolhaNome" Content="NOME:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblManutMesFolha" Content="MÊS:" HorizontalAlignment="Left" Margin="251,13,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtManutMesFolha" HorizontalAlignment="Left" Height="23" Margin="292,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="txtConsNomeFolha" HorizontalAlignment="Left" Height="23" Margin="76,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="txtConsNomeFolha" HorizontalAlignment="Left" Height="23" Margin="114,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335"/>
         <Label x:Name="lblManutSalBrFolha" Content="VALOR BRUTO:" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblManutInssFolha" Content="VALOR INSS:" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtConsSalBrFolha" HorizontalAlignment="Left" Height="23" Margin="157,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

@@ -27,32 +27,32 @@ namespace FolhaPagamento
         private void btbRelatEmpreg_Click(object sender, RoutedEventArgs e)
         {
             RelatorioEmpregados relat = new RelatorioEmpregados();
-            relat.ShowDialog();
+            relat.Show();
                 
         }
 
         private void btbRelatFolha_Click(object sender, RoutedEventArgs e)
         {
             RelatorioFolha relat = new RelatorioFolha();
-            relat.ShowDialog();
+            relat.Show();
         }
 
         private void btbVoltarMenu_Click(object sender, RoutedEventArgs e)
         {
             MainWindow cad = new MainWindow();
-            cad.ShowDialog();
+            cad.Show();
         }
 
         private void btbRelatDepto_Click(object sender, RoutedEventArgs e)
         {
             RelatorioDepto relat = new RelatorioDepto();
-            relat.ShowDialog();
+            relat.Show();
         }
 
         private void btbRelatCargos_Click(object sender, RoutedEventArgs e)
         {
             RelatorioCargo relat = new RelatorioCargo();
-            relat.ShowDialog();
+            relat.Show();
         }
     }
 }
