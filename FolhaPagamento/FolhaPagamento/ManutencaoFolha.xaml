@@ -8,34 +8,34 @@
         Title="MANUTENÇÃO FOLHA PAGAMENTO" Background="#FFF17272" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label x:Name="lblManutFolhaCpf" Content="INFORME O CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtManutFolhaCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnConsFolhaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="473,16,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtManutFolhaCpf" HorizontalAlignment="Left" Height="23" Margin="114,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <Button x:Name="btnConsFolhaCpf" Content="PESQUISAR" HorizontalAlignment="Left" Margin="374,10,0,0" VerticalAlignment="Top" Width="75" Click="btnConsFolhaCpf_Click"/>
         <Label x:Name="lblManutFolhaNome" Content="NOME:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutMesFolha" Content="MÊS:" HorizontalAlignment="Left" Margin="251,13,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtManutMesFolha" HorizontalAlignment="Left" Height="23" Margin="292,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="txtConsNomeFolha" HorizontalAlignment="Left" Height="23" Margin="114,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335"/>
-        <Label x:Name="lblManutSalBrFolha" Content="VALOR BRUTO:" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutInssFolha" Content="VALOR INSS:" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtConsSalBrFolha" HorizontalAlignment="Left" Height="23" Margin="157,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtConsInssFolha" HorizontalAlignment="Left" Height="23" Margin="157,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblManutIrFolha" Content="VALOR IR:" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtConsIrFolha" HorizontalAlignment="Left" Height="23" Margin="157,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblManutVlrLiqFolha" Content="VALOR LIQUIDO:" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtConsVlrLiqFolha" HorizontalAlignment="Left" Height="23" Margin="157,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnVoltarMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" Width="105" Click="btnVoltarMenuPrinc_Click"/>
-        <Button x:Name="btnVoltarMenuManut" Content="MENU MANUTENÇÃO" HorizontalAlignment="Left" Margin="151,350,0,0" VerticalAlignment="Top" Width="126" Click="btnVoltarMenuManut_Click"/>
-        <Label x:Name="lblManutQtdeHrNormal" Content="QUANTIDADE HORA NORMAL:" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutQtdeHrExtra" Content="QUANTIDADE HORA EXTRA:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutVlrHrNormal" Content="VALOR HORA NORMAL:" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutVlrHrExtra" Content="VALOR HORA EXTRA:" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblManutAnoFolha" Content="ANO:" HorizontalAlignment="Left" Margin="347,13,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtManutAnoFolha" HorizontalAlignment="Left" Height="23" Margin="399,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <TextBox x:Name="txtManutQtHrNormal" HorizontalAlignment="Left" Height="23" Margin="200,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="txtManutHrExtra" HorizontalAlignment="Left" Height="23" Margin="200,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="txtManutVlrHrNormal" HorizontalAlignment="Left" Height="23" Margin="157,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtManutVlrHrExtra" HorizontalAlignment="Left" Height="23" Margin="157,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnFolhaEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="347,271,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnFolhaExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="347,302,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblManutMesFolha" Content="MÊS:" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtManutMesFolha" HorizontalAlignment="Left" Height="23" Margin="210,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="txtManutNomeFolha" HorizontalAlignment="Left" Height="23" Margin="114,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335"/>
+        <Label x:Name="lblManutSalBrFolha" Content="VALOR BRUTO:" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutInssFolha" Content="VALOR INSS:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtManutSalBrFolha" HorizontalAlignment="Left" Height="23" Margin="157,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtManutInssFolha" HorizontalAlignment="Left" Height="23" Margin="157,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblManutIrFolha" Content="VALOR IR:" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtManutIrFolha" HorizontalAlignment="Left" Height="23" Margin="157,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblManutVlrLiqFolha" Content="VALOR LIQUIDO:" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtManutVlrLiqFolha" HorizontalAlignment="Left" Height="23" Margin="157,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnVoltarMenuInicial" Content="MENU INICIAL" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Width="105" Click="btnVoltarMenuPrinc_Click"/>
+        <Button x:Name="btnVoltarMenuManut" Content="MENU MANUTENÇÃO" HorizontalAlignment="Left" Margin="157,377,0,0" VerticalAlignment="Top" Width="126" Click="btnVoltarMenuManut_Click"/>
+        <Label x:Name="lblManutQtdeHrNormal" Content="QUANTIDADE HORA NORMAL:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutQtdeHrExtra" Content="QUANTIDADE HORA EXTRA:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutVlrHrNormal" Content="VALOR HORA NORMAL:" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutVlrHrExtra" Content="VALOR HORA EXTRA:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblManutAnoFolha" Content="ANO:" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtManutAnoFolha" HorizontalAlignment="Left" Height="23" Margin="210,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="txtManutQtHrNormal" HorizontalAlignment="Left" Height="23" Margin="200,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <TextBox x:Name="txtManutQtHrExtra" HorizontalAlignment="Left" Height="23" Margin="200,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <TextBox x:Name="txtManutVlrHrNormal" HorizontalAlignment="Left" Height="23" Margin="157,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtManutVlrHrExtra" HorizontalAlignment="Left" Height="23" Margin="157,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnFolhaEditar" Content="EDITAR" HorizontalAlignment="Left" Margin="374,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnFolhaExcluir" Content="EXCLUIR" HorizontalAlignment="Left" Margin="374,351,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

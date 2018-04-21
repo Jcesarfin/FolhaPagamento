@@ -34,22 +34,22 @@ namespace Controllers
             return ContextoSingleton.Instancia.Salarios.Find(id);
         }
 
-        //public Salario PesquisarPorNome(string nome)
-        //{
-        //    var c = from x in ContextoSingleton.Instancia.Salarios
-        //            where x.Nome.ToLower().Contains(nome.Trim().ToLower()) // ver relacionamento com empregado
-      //              select x;
+        public Salario PesquisarPorCpfMesAno(string cpf)     /// consulta desejada (string cpf, int mes, int ano)
+        {
+            var s = from x in ContextoSingleton.Instancia.Salarios
+                    where x._Empregado.CPF.Contains(cpf.Trim().ToLower())
+                    select x;
 
-       //     if (c != null)
-         //       return c.FirstOrDefault();
-         //   else
-          //      return null;
-       // }
+            if (s != null)
+               return s.FirstOrDefault();
+            else
+                return null;
+        }
 
 
         // EDIT
 
-        public static void EditarSalario(int id, Salario novoSalario, Empregado novoEmpregado)
+        public static void EditarSalario(int id, Salario novoSalario)
         {
             
             Salario salarioEditar = PesquisarPorID(id);
@@ -57,9 +57,7 @@ namespace Controllers
             if(salarioEditar != null)
 
             {
-
-                // ver pesquisa cpf
-                //salarioEditar._Empregado.Nome = novoSalario._Empregado.Nome;
+                             
                 salarioEditar.QtdeHoraNormal = novoSalario.QtdeHoraNormal;
                 salarioEditar.QtdeHoraExtra = novoSalario.QtdeHoraExtra;
                 salarioEditar.VlrHoraNormal = novoSalario.VlrHoraNormal;
@@ -68,8 +66,7 @@ namespace Controllers
                 salarioEditar.VlrIR = novoSalario.VlrIR;
                 salarioEditar.SalarioBruto = novoSalario.SalarioBruto;
                 salarioEditar.SalarioLiquido = novoSalario.SalarioLiquido;
-                salarioEditar.Mes = novoSalario.Mes;
-                salarioEditar.Ano = novoSalario.Ano;
+                
 
                 ContextoSingleton.Instancia.Entry(salarioEditar).State = System.Data.Entity.EntityState.Modified;
 

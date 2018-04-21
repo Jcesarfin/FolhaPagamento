@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +37,24 @@ namespace FolhaPagamento
         {
             ManutencaoGeral manut = new ManutencaoGeral();
             manut.Show();
+        }
+
+        private void btnConsFolhaCpf_Click(object sender, RoutedEventArgs e)
+        {
+            SalarioController salC = new SalarioController();
+            Salario sal = salC.PesquisarPorCpfMesAno(txtManutFolhaCpf.Text);
+
+            txtManutNomeFolha.Text = sal._Empregado.Nome;
+            txtManutQtHrNormal.Text = Convert.ToString(sal.QtdeHoraNormal);
+            txtManutQtHrExtra.Text = Convert.ToString(sal.QtdeHoraExtra);
+            txtManutVlrHrNormal.Text = Convert.ToString(sal.VlrHoraNormal);
+            txtManutVlrHrExtra.Text = Convert.ToString(sal.VlrHoraExtra);
+            txtManutSalBrFolha.Text = Convert.ToString(sal.SalarioBruto);
+            txtManutInssFolha.Text = Convert.ToString(sal.VlrInss);
+            txtManutIrFolha.Text = Convert.ToString(sal.VlrIR);
+            txtManutVlrLiqFolha.Text = Convert.ToString(sal.SalarioLiquido);
+            txtManutMesFolha.Text = Convert.ToString(sal.Mes);
+            txtManutAnoFolha.Text = Convert.ToString(sal.Ano);
         }
     }
 }
