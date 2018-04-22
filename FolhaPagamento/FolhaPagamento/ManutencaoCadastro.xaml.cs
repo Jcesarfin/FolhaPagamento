@@ -78,8 +78,7 @@ namespace FolhaPagamento
             novoEmp.Departamento = txtConsDeptoEmp.Text;
             novoEmp.Cargo = txtConsCargoEmp.Text;
 
-            
-
+           
             novoEmp._Endereco.Rua = txtConsRuaEmp.Text;
             novoEmp._Endereco.Numero = Convert.ToInt32(txtConsNumEmp.Text);
             novoEmp._Endereco.Cep = Convert.ToInt32(txtConsCepEmp.Text);
@@ -88,8 +87,22 @@ namespace FolhaPagamento
 
             novoEmp.EnderecoID = novoEmp.EmpregadoID;
 
-            EmpregadoController.EditarEmpregado(novoEmp.EmpregadoID, novoEmp, novoEmp._Endereco);           
-            
+            EmpregadoController.EditarEmpregado(novoEmp.EmpregadoID, novoEmp, novoEmp._Endereco);
+
+            txtConsEmpCpf.Text = (" ");
+            txtConsNomeEmp.Text = (" ");
+            txtConsIdentEmp.Text = (" ");
+            txtConsCpfEmp.Text = (" ");
+            txtConsDtNascEmp.Text = (" ");
+            txtConsDtAdmEmp.Text = (" ");
+            txtConsDtDemEmp.Text = (" ");
+            txtConsDeptoEmp.Text = (" ");
+            txtConsCargoEmp.Text = (" ");
+            txtConsRuaEmp.Text = (" ");
+            txtConsNumEmp.Text = (" ");
+            txtConsCepEmp.Text = (" ");
+            txtConsComplEmp.Text = (" ");
+
         }
 
         private void btbManutExcluir_Click(object sender, RoutedEventArgs e)
@@ -106,7 +119,19 @@ namespace FolhaPagamento
             EmpregadoController.ExcluirEmpregado(em.EmpregadoID);
             EnderecoController.ExcluirEndereco(end.EnderecoID);
 
-
+            txtConsEmpCpf.Text = (" ");
+            txtConsNomeEmp.Text = (" ");
+            txtConsIdentEmp.Text = (" ");
+            txtConsCpfEmp.Text = (" ");
+            txtConsDtNascEmp.Text = (" ");
+            txtConsDtAdmEmp.Text = (" ");
+            txtConsDtDemEmp.Text = (" ");
+            txtConsDeptoEmp.Text = (" ");
+            txtConsCargoEmp.Text = (" ");
+            txtConsRuaEmp.Text = (" ");
+            txtConsNumEmp.Text = (" ");
+            txtConsCepEmp.Text = (" ");
+            txtConsComplEmp.Text = (" ");
 
         }
     }

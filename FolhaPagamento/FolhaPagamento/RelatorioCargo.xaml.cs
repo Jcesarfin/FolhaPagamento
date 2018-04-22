@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controllers;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +39,15 @@ namespace FolhaPagamento
 
         private void ListarCargos()
         {
+            //CargoController car = new CargoController();
+            //Cargo c = car.PesquisarPorID(int id);
 
+            //txtRelatNomeCargo.Text = c.NomeCargo;
+            //txtRelatVlrHrCargo.Text = Convert.ToString(c.ValorHora);
+
+
+            //CargoController.ListarCargos();
+           
         }
 
     }

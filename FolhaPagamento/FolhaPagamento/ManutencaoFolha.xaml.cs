@@ -56,5 +56,69 @@ namespace FolhaPagamento
             txtManutMesFolha.Text = Convert.ToString(sal.Mes);
             txtManutAnoFolha.Text = Convert.ToString(sal.Ano);
         }
+
+        private void btnFolhaEditar_Click(object sender, RoutedEventArgs e)
+        {
+            SalarioController salC = new SalarioController();
+            Salario sal = salC.PesquisarPorCpfMesAno(txtManutFolhaCpf.Text);
+
+            Salario novoSalario = new Salario();
+            novoSalario.SalarioID = sal.SalarioID;
+
+            novoSalario.QtdeHoraNormal = Convert.ToInt32(txtManutQtHrNormal.Text);
+            novoSalario.QtdeHoraExtra = Convert.ToInt32(txtManutQtHrExtra.Text);
+            novoSalario.VlrHoraNormal = Convert.ToDecimal(txtManutVlrHrNormal.Text);
+            novoSalario.VlrHoraExtra = Convert.ToDecimal(txtManutVlrHrExtra.Text);
+            novoSalario.SalarioBruto = Convert.ToDecimal(txtManutSalBrFolha.Text);
+            novoSalario.VlrInss = Convert.ToDecimal(txtManutInssFolha.Text);
+            novoSalario.VlrIR = Convert.ToDecimal(txtManutIrFolha.Text);
+            novoSalario.SalarioLiquido = Convert.ToDecimal(txtManutVlrLiqFolha.Text);
+            novoSalario.Mes = Convert.ToInt32(txtManutMesFolha.Text);
+            novoSalario.Ano = Convert.ToInt32(txtManutAnoFolha.Text);
+
+            
+            SalarioController.EditarSalario(novoSalario.SalarioID, novoSalario);
+
+            txtManutFolhaCpf.Text = (" ");
+            txtManutNomeFolha.Text = (" ");
+            txtManutQtHrNormal.Text = (" ");
+            txtManutQtHrExtra.Text = (" ");
+            txtManutVlrHrNormal.Text = (" ");
+            txtManutVlrHrExtra.Text = (" ");
+            txtManutSalBrFolha.Text = (" ");
+            txtManutInssFolha.Text = (" ");
+            txtManutIrFolha.Text = (" ");
+            txtManutVlrLiqFolha.Text = (" ");
+            txtManutMesFolha.Text = (" ");
+            txtManutAnoFolha.Text = (" ");
+
+
+
+        }
+
+        private void btnFolhaExcluir_Click(object sender, RoutedEventArgs e)
+        {
+            SalarioController salC = new SalarioController();
+            Salario sal = salC.PesquisarPorCpfMesAno(txtManutFolhaCpf.Text);
+
+            Salario s = new Salario();
+            s.SalarioID = sal.SalarioID;
+
+            SalarioController.ExcluirSalario(s.SalarioID);
+
+            txtManutFolhaCpf.Text = (" ");
+            txtManutNomeFolha.Text = (" ");
+            txtManutQtHrNormal.Text = (" ");
+            txtManutQtHrExtra.Text = (" ");
+            txtManutVlrHrNormal.Text = (" ");
+            txtManutVlrHrExtra.Text = (" ");
+            txtManutSalBrFolha.Text = (" ");
+            txtManutInssFolha.Text = (" ");
+            txtManutIrFolha.Text = (" ");
+            txtManutVlrLiqFolha.Text = (" ");
+            txtManutMesFolha.Text = (" ");
+            txtManutAnoFolha.Text = (" ");
+
+        }
     }
 }

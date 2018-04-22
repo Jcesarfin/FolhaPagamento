@@ -46,6 +46,10 @@ namespace FolhaPagamento
             depart.LocalDepartamento = txtLocalDepto.Text;
 
             DepartamentoController.SalvarDepartamento(depart);
+
+            txtNomeDepto.Text = (" ");
+            txtLocalDepto.Text = (" ");
+
         }
 
 

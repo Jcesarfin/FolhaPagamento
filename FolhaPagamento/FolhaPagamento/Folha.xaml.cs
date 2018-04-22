@@ -45,17 +45,15 @@ namespace FolhaPagamento
 
             
             Salario sal = new Salario();
-
-            //sal._Empregado.CPF = txtFolhaCpf.Text;
-            //sal._Empregado.Nome = txtFolhaNome.Text;
+            
             sal.QtdeHoraNormal = Convert.ToInt32(txtFolhaQtHrNormal.Text);
             sal.QtdeHoraExtra = Convert.ToInt32(txtFolhaQtHrExtra.Text);
-            sal.VlrHoraNormal = Convert.ToInt32(txtFolhaVlrHrNormal.Text);
-            sal.VlrHoraExtra = Convert.ToInt32(txtFolhaVlrHrExtra.Text);
-            sal.SalarioBruto = Convert.ToInt32(txtFolhaVlrSalBruto.Text);
-            sal.VlrInss = Convert.ToInt32(txtFolhaVlrInss.Text);
-            sal.VlrIR = Convert.ToInt32(txtFolhaVlrIR.Text);
-            sal.SalarioLiquido = Convert.ToInt32(txtFolhaVlrSalLiq.Text);
+            sal.VlrHoraNormal = Convert.ToDecimal(txtFolhaVlrHrNormal.Text);
+            sal.VlrHoraExtra = Convert.ToDecimal(txtFolhaVlrHrExtra.Text);
+            sal.SalarioBruto = Convert.ToDecimal(txtFolhaVlrSalBruto.Text);
+            sal.VlrInss = Convert.ToDecimal(txtFolhaVlrInss.Text);
+            sal.VlrIR = Convert.ToDecimal(txtFolhaVlrIR.Text);
+            sal.SalarioLiquido = Convert.ToDecimal(txtFolhaVlrSalLiq.Text);
             sal.Mes = Convert.ToInt32(txtFolhaMesRef.Text);
             sal.Ano = Convert.ToInt32(txtFolhaAnoRef.Text);
 
@@ -63,7 +61,20 @@ namespace FolhaPagamento
             sal.EmpregadoID = emp.EmpregadoID;
 
             SalarioController.SalvarSalario(sal);
-             
+
+            txtFolhaCpf.Text = (" ");
+            txtFolhaNome.Text = (" ");
+            txtFolhaQtHrNormal.Text = (" ");
+            txtFolhaQtHrExtra.Text = (" ");
+            txtFolhaVlrHrNormal.Text = (" ");
+            txtFolhaVlrHrExtra.Text = (" ");
+            txtFolhaVlrSalBruto.Text = (" ");
+            txtFolhaVlrInss.Text = (" ");
+            txtFolhaVlrIR.Text = (" ");
+            txtFolhaVlrSalLiq.Text = (" ");
+            txtFolhaMesRef.Text = (" ");
+            txtFolhaAnoRef.Text = (" ");
+
         }
 
         private void btnPesquisaCpf_Click(object sender, RoutedEventArgs e)

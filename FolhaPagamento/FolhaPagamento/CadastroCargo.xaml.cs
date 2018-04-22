@@ -43,9 +43,15 @@ namespace FolhaPagamento
             Cargo car = new Cargo();
 
             car.NomeCargo = txtNomeCargo.Text;
-            car.ValorHora = Convert.ToInt32(txtVlrHora.Text);
+            car.ValorHora = Convert.ToDecimal(txtVlrHora.Text);
 
             CargoController.SalvarCargo(car);
+
+            txtNomeCargo.Text = (" ");
+            txtVlrHora.Text = (" ");
+
+
+
         }
     }
 }

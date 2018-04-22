@@ -67,7 +67,21 @@ namespace FolhaPagamento
             emp.EnderecoID = end.EnderecoID;
 
             EmpregadoController.SalvarEmpregado(emp);
-            
+
+            txtCadEndRua.Text = (" ");
+            txtCadEndNum.Text = (" ");
+            txtCadEndCep.Text = (" ");
+            txtCadEndCompl.Text = (" ");
+            txtEmprNome.Text = (" ");
+            txtEmprIdent.Text = (" ");
+            txtEmprCpf.Text = (" ");
+            txtEmpSexo.Text = (" ");
+            txtEmprNasc.Text = (" ");
+            txtEmprAdm.Text = (" ");
+            txtEmprDemi.Text = (" ");
+            txtEmpDepto.Text = (" ");
+            txtEmpCargo.Text = (" ");
+
         }
         
 

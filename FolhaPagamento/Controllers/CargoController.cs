@@ -10,7 +10,7 @@ namespace Controllers
 {
     public class CargoController
     {
-        // INSERT
+        // INSERT OK
 
         public static void SalvarCargo(Cargo cargo)
         {
@@ -18,7 +18,7 @@ namespace Controllers
             ContextoSingleton.Instancia.SaveChanges();
         }
 
-        // SELECT *
+        // SELECT * OK
 
         public static List<Cargo> ListarCargos()
         {
@@ -26,10 +26,11 @@ namespace Controllers
 
         }
 
-        // SELECT BY ID
+        // SELECT BY ID  NÃO UTILIZADO
 
         public static Cargo PesquisarPorID(int id)
         {
+                                 
             return ContextoSingleton.Instancia.Cargos.Find(id);
         }
 
@@ -48,7 +49,7 @@ namespace Controllers
 
 
 
-        // EDIT
+        // EDIT NÃO UTILIZADO
 
         public static void EditarCargo(int id, Cargo novoCargo)
         {
@@ -68,7 +69,7 @@ namespace Controllers
 
         }
 
-        // DELETE
+        // DELETE NÃO UTILIZADDO
 
         public static void ExcluirCargo(int id)
         {

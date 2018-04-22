@@ -66,6 +66,8 @@ namespace Controllers
                 salarioEditar.VlrIR = novoSalario.VlrIR;
                 salarioEditar.SalarioBruto = novoSalario.SalarioBruto;
                 salarioEditar.SalarioLiquido = novoSalario.SalarioLiquido;
+                salarioEditar.Mes = novoSalario.Mes;
+                salarioEditar.Ano = novoSalario.Ano;
                 
 
                 ContextoSingleton.Instancia.Entry(salarioEditar).State = System.Data.Entity.EntityState.Modified;
