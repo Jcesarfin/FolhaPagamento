@@ -10,22 +10,21 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="3*"/>
-
-
-
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="26*"/>
-            <RowDefinition Height="193*"/>
-        </Grid.RowDefinitions>
-        <Button x:Name="btnGerarRelatCargo" Content="LISTAR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="44" FontSize="9" Click="btnGerarRelatCargo_Click"/>
-        <Button x:Name="btbVoltarRelat" Content="VOLTAR" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Width="46" FontSize="9" Click="btbVoltarRelat_Click"/>
-        <Label x:Name="lblRelatNomeCargo" Content="NOME" HorizontalAlignment="Left" Margin="59,26,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblRelatVlrHrCargo" Content="VALOR HORA" Grid.Column="1" HorizontalAlignment="Left" Margin="27,26,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+
+        <Button x:Name="btnGerarRelatCargo" Content="LISTAR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="67" FontSize="9" Click="btnGerarRelatCargo_Click" Height="25"/>
+        <Button x:Name="btbVoltarRelat" Content="VOLTAR" HorizontalAlignment="Left" Margin="145,8,0,0" VerticalAlignment="Top" Width="66" FontSize="9" Click="btbVoltarRelat_Click" Height="27"/>
         <Label x:Name="label" HorizontalAlignment="Left" Margin="77,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtRelatNomeCargo" HorizontalAlignment="Left" Height="23" Margin="16,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtRelatVlrHrCargo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="16,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListView x:Name="lvCargos" HorizontalAlignment="Left" Height="151" Margin="10,66,0,0" VerticalAlignment="Top" Width="340">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Label Foreground="Black" Content="{Binding NomeCargo}"/>
+                        <Label Foreground="Black" Content="{Binding ValorHora}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </Grid>
 </Window>

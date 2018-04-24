@@ -39,7 +39,7 @@ namespace Controllers
 
         }
 
-        // SELECT BY NAME - UTILIZADA NA FOLHA E NA MANUTENÇÃO EMPREGADO
+        // SELECT BY CPF - UTILIZADA NA FOLHA E NA MANUTENÇÃO EMPREGADO
 
         public Empregado PesquisarPorCpf(string cpf)
         {
@@ -82,8 +82,7 @@ namespace Controllers
 
                 ContextoSingleton.Instancia.SaveChanges();
 
-
-
+                
             }
         }
 

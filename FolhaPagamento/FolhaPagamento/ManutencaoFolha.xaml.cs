@@ -44,6 +44,9 @@ namespace FolhaPagamento
             SalarioController salC = new SalarioController();
             Salario sal = salC.PesquisarPorCpfMesAno(txtManutFolhaCpf.Text);
 
+            if (sal != null)
+            {
+
             txtManutNomeFolha.Text = sal._Empregado.Nome;
             txtManutQtHrNormal.Text = Convert.ToString(sal.QtdeHoraNormal);
             txtManutQtHrExtra.Text = Convert.ToString(sal.QtdeHoraExtra);
@@ -55,6 +58,11 @@ namespace FolhaPagamento
             txtManutVlrLiqFolha.Text = Convert.ToString(sal.SalarioLiquido);
             txtManutMesFolha.Text = Convert.ToString(sal.Mes);
             txtManutAnoFolha.Text = Convert.ToString(sal.Ano);
+
+            }
+            else
+                MessageBox.Show("Cliente não encontrado");
+
         }
 
         private void btnFolhaEditar_Click(object sender, RoutedEventArgs e)

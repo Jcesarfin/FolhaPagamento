@@ -39,13 +39,9 @@ namespace FolhaPagamento
 
         private void ListarDepartamentos()
         {
-            Departamento depart = new Departamento();
-            ContextoSingleton.Instancia.Departamentos.ToList();
-
-            txtRelatNomeDepto.Text = depart.NomeDepartamento;
-            txtRelatLocalDepto.Text = depart.LocalDepartamento; 
-
-            DepartamentoController.ListarDepartamentos();
+            
+            lvDepto.ItemsSource = DepartamentoController.ListarDepartamentos();
+           
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,22 @@ namespace FolhaPagamento
         {
             InitializeComponent();
         }
-
-        private void btnVoltarRelatGeral_Click(object sender, RoutedEventArgs e)
+        private void btnRelatEmpVoltar_Click(object sender, RoutedEventArgs e)
         {
             RelatorioGeral relat = new RelatorioGeral();
             relat.Show();
         }
+
+        private void btnRelatEmpListar_Click(object sender, RoutedEventArgs e)
+        {
+            ListarEmpregados();           
+        }
+
+        private void ListarEmpregados()
+        {
+            lvEmpregado.ItemsSource = EmpregadoController.ListarEmpregados();
+        }
+
+       
     }
 }

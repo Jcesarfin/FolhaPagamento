@@ -10,21 +10,20 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="3*"/>
-
-
-
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="26*"/>
-            <RowDefinition Height="193*"/>
-        </Grid.RowDefinitions>
+
         <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Height="13" Width="38"/>
-        <Label x:Name="lblRelatNomeDepto" Content="NOME " HorizontalAlignment="Left" Margin="49,25,0,0" VerticalAlignment="Top" Height="26" Width="48" Grid.RowSpan="2"/>
-        <Label x:Name="lblRelatLocalDepto" Content="LOCAL" Grid.Column="1" HorizontalAlignment="Left" Margin="54,25,0,0" VerticalAlignment="Top" Height="26" Width="45" Grid.RowSpan="2"/>
-        <TextBox x:Name="txtRelatNomeDepto" HorizontalAlignment="Left" Height="23" Margin="10,1,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="txtRelatLocalDepto" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="16,1,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnVoltarRelatGeral" Content="VOLTAR" HorizontalAlignment="Left" Margin="69,7,0,0" VerticalAlignment="Top" Width="61" FontSize="9" Height="16" Click="btnVoltarRelatGeral_Click"/>
         <Button x:Name="btbRelatGerar" Content="LISTAR" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="54" FontSize="9" Height="16" Click="btbRelatGerar_Click"/>
+        <ListView x:Name="lvDepto" HorizontalAlignment="Left" Height="100" Margin="10,49,0,0" VerticalAlignment="Top" Width="370">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Label Foreground="Black" Content="{Binding NomeDepartamento}"/>
+                        <Label Foreground="Black" Content="{Binding LocalDepartamento}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

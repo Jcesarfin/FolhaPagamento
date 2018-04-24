@@ -28,59 +28,59 @@ namespace Controllers
 
         // SELECT BY ID  NÃO UTILIZADO
 
-        public static Cargo PesquisarPorID(int id)
+        public Cargo PesquisarPorID(int id)    // tirei o static
         {
                                  
             return ContextoSingleton.Instancia.Cargos.Find(id);
         }
 
 
-        public Cargo PesquisarPorNome(string nome)
-        {
-            var c = from x in ContextoSingleton.Instancia.Cargos
-                    where x.NomeCargo.ToLower().Contains(nome.Trim().ToLower())
-                    select x;
+        //public Cargo PesquisarPorNome(string nome)
+        //{
+           // var c = from x in ContextoSingleton.Instancia.Cargos
+           //         where x.NomeCargo.ToLower().Contains(nome.Trim().ToLower())
+           //         select x;
 
-            if (c != null)
-                return c.FirstOrDefault();
-            else
-                return null;
-        }
+          //  if (c != null)
+        //        return c.FirstOrDefault();
+        //    else
+           //     return null;
+       // }
 
 
 
         // EDIT NÃO UTILIZADO
 
-        public static void EditarCargo(int id, Cargo novoCargo)
-        {
-            Cargo cargoEditar = PesquisarPorID(id);
+       // public static void EditarCargo(int id, Cargo novoCargo)
+       // {
+       //     Cargo cargoEditar = PesquisarPorID(id);
 
-            if (cargoEditar != null)
+        //    if (cargoEditar != null)
 
-            {
-                cargoEditar.NomeCargo = novoCargo.NomeCargo;
-                cargoEditar.ValorHora = novoCargo.ValorHora;
+        //    {
+        //        cargoEditar.NomeCargo = novoCargo.NomeCargo;
+        //        cargoEditar.ValorHora = novoCargo.ValorHora;
 
                 
-                ContextoSingleton.Instancia.Entry(cargoEditar).State = System.Data.Entity.EntityState.Modified;
+        //        ContextoSingleton.Instancia.Entry(cargoEditar).State = System.Data.Entity.EntityState.Modified;
 
-                ContextoSingleton.Instancia.SaveChanges();
-            }
+         //       ContextoSingleton.Instancia.SaveChanges();
+          //  }
 
-        }
+       // }
 
         // DELETE NÃO UTILIZADDO
 
-        public static void ExcluirCargo(int id)
-        {
-            Empregado e = ContextoSingleton.Instancia.Empregados.Find(id);
-            ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
+       // public static void ExcluirCargo(int id)
+      //  {
+        //    Empregado e = ContextoSingleton.Instancia.Empregados.Find(id);
+       //     ContextoSingleton.Instancia.Entry(e).State = System.Data.Entity.EntityState.Deleted;
 
-            ContextoSingleton.Instancia.SaveChanges();
+       //     ContextoSingleton.Instancia.SaveChanges();
 
 
 
-        }
+      //  }
 
 
 

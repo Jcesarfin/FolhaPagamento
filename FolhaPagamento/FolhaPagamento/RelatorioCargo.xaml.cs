@@ -39,15 +39,10 @@ namespace FolhaPagamento
 
         private void ListarCargos()
         {
-            //CargoController car = new CargoController();
-            //Cargo c = car.PesquisarPorID(int id);
-
-            //txtRelatNomeCargo.Text = c.NomeCargo;
-            //txtRelatVlrHrCargo.Text = Convert.ToString(c.ValorHora);
-
-
-            //CargoController.ListarCargos();
+            
+            lvCargos.ItemsSource = CargoController.ListarCargos();
            
+                      
         }
 
     }

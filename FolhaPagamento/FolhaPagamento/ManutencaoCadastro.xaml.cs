@@ -43,6 +43,9 @@ namespace FolhaPagamento
             EmpregadoController empC = new EmpregadoController();
             Empregado emp = empC.PesquisarPorCpf(txtConsEmpCpf.Text);
 
+            if (emp != null)
+            {                      
+
             txtConsNomeEmp.Text = emp.Nome;
             txtConsIdentEmp.Text = emp.Identidade;
             txtConsCpfEmp.Text = emp.CPF;
@@ -57,6 +60,9 @@ namespace FolhaPagamento
             txtConsCepEmp.Text = Convert.ToString(emp._Endereco.Cep);
             txtConsComplEmp.Text = emp._Endereco.Complemento;
 
+            }
+            else
+                MessageBox.Show("Cliente não encontrado");
         }
 
         private void btnManutEditar_Click(object sender, RoutedEventArgs e)

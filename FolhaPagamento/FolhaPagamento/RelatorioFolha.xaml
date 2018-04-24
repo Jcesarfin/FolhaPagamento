@@ -9,28 +9,31 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-
-
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="79*"/>
-            <RowDefinition Height="83*"/>
-            <RowDefinition Height="342*"/>
-        </Grid.RowDefinitions>
-        <Label x:Name="lblRelatFolhaNome" Content="NOME" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
-        <Label x:Name="lblRelatFolhaSalBr" Content="SALÁRIO BRUTO" Grid.Column="1" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="98"/>
-        <Label x:Name="lblRelatFolhaSalLiq" Content="SALÁRIO LIQUIDO" Grid.Column="2" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="107"/>
-        <Label x:Name="lblRelatFolhaMes" Content="MÊS" Grid.Column="3" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="33"/>
-        <Label x:Name="lblRelatFolhaAno" Content="ANO" Grid.Column="4" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="26" Width="36"/>
-        <TextBox x:Name="txtRelatFolhaNome" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
-        <TextBox x:Name="txtRelatFolhaSalBr" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
-        <TextBox x:Name="txtRelatFolhaSalLiq" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
-        <TextBox x:Name="txtRelatFolhaMes" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"/>
-        <TextBox x:Name="txtRelatFolhaAno" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="10,44,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
-        <Button x:Name="btnVoltarRelatGeral" Content="MENU RELATÓRIOS" HorizontalAlignment="Left" Margin="10,52,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Click="btnVoltarRelatGeral_Click" Height="20"/>
+        <Button x:Name="btnRelatFolhaListar" Content="LISTAR" HorizontalAlignment="Left" Margin="21,24,0,0" VerticalAlignment="Top" Width="75" Click="btnRelatFolhaListar_Click"/>
+        <Button x:Name="btnRelatFolhaVoltar" Content="VOLTAR" HorizontalAlignment="Left" Margin="156,24,0,0" VerticalAlignment="Top" Width="75" Click="btnRelatFolhaVoltar_Click"/>
+        <ListView x:Name="lvFolha" HorizontalAlignment="Left" Height="100" Margin="21,60,0,0" VerticalAlignment="Top" Width="547" Grid.ColumnSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Label Foreground="Black" Content="{Binding Nome}"/>
+                        <Label Foreground="Black" Content="{Binding CPF}"/>
+                        <Label Foreground="Black" Content="{Binding QtdeHoraNormal}"/>
+                        <Label Foreground="Black" Content="{Binding QtdeHoraExtra}"/>
+                        <Label Foreground="Black" Content="{Binding VlrHoraNormal}"/>
+                        <Label Foreground="Black" Content="{Binding VlrHoraExtra}"/>
+                        <Label Foreground="Black" Content="{Binding SalarioBruto}"/>
+                        <Label Foreground="Black" Content="{Binding VlrInss}"/>
+                        <Label Foreground="Black" Content="{Binding VlrIR}"/>
+                        <Label Foreground="Black" Content="{Binding SalarioLiquido}"/>
+                        <Label Foreground="Black" Content="{Binding Mes}"/>
+                        <Label Foreground="Black" Content="{Binding Ano}"/>
+
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>
 </Window>

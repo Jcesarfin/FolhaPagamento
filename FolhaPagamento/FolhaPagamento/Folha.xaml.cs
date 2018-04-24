@@ -42,10 +42,10 @@ namespace FolhaPagamento
             EmpregadoController empC = new EmpregadoController();
             Empregado emp = empC.PesquisarPorCpf(txtFolhaCpf.Text);
             txtFolhaNome.Text = emp.Nome;
-
-            
+                        
             Salario sal = new Salario();
-            
+
+           
             sal.QtdeHoraNormal = Convert.ToInt32(txtFolhaQtHrNormal.Text);
             sal.QtdeHoraExtra = Convert.ToInt32(txtFolhaQtHrExtra.Text);
             sal.VlrHoraNormal = Convert.ToDecimal(txtFolhaVlrHrNormal.Text);
@@ -57,7 +57,7 @@ namespace FolhaPagamento
             sal.Mes = Convert.ToInt32(txtFolhaMesRef.Text);
             sal.Ano = Convert.ToInt32(txtFolhaAnoRef.Text);
 
-                     
+           
             sal.EmpregadoID = emp.EmpregadoID;
 
             SalarioController.SalvarSalario(sal);
@@ -82,9 +82,14 @@ namespace FolhaPagamento
             
             EmpregadoController empC = new EmpregadoController();
             Empregado emp = empC.PesquisarPorCpf(txtFolhaCpf.Text);
-            txtFolhaNome.Text = emp.Nome;
 
-            
+        if (emp != null)
+        {
+            txtFolhaNome.Text = emp.Nome;
+            }
+            else
+                MessageBox.Show("Cliente não encontrado");
+
         }
 
 
