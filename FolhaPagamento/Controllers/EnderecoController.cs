@@ -14,7 +14,7 @@ namespace Controllers
 
         public static void SalvarEndereco(Endereco endereco)
         {
-            ContextoSingleton.Instancia.Enderecos.Add(endereco);
+           ContextoSingleton.Instancia.Enderecos.Add(endereco);
             ContextoSingleton.Instancia.SaveChanges();
 
 
@@ -29,23 +29,23 @@ namespace Controllers
 
         // SELECT BY ID
 
-        public static Endereco PesquisarPorID(int id)
-        {
+       public static Endereco PesquisarPorID(int id)
+       {
            return ContextoSingleton.Instancia.Enderecos.Find(id);
         }
 
 
-        public Endereco PesquisarPorRua(string rua)
-        {
-            var c = from x in ContextoSingleton.Instancia.Enderecos
-                    where x.Rua.ToLower().Contains(rua.Trim().ToLower()) 
-                    select x;
+        //public Endereco PesquisarPorRua(string rua)
+        //{
+        //    var c = from x in ContextoSingleton.Instancia.Enderecos
+         //           where x.Rua.ToLower().Contains(rua.Trim().ToLower()) 
+         //           select x;
 
-            if (c != null)
-                return c.FirstOrDefault();
-            else
-                return null;
-        }
+        //    if (c != null)
+        //        return c.FirstOrDefault();
+         //   else
+        //        return null;
+       // }
 
 
 

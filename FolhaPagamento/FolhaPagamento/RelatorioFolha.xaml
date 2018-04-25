@@ -9,11 +9,33 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
+           
         </Grid.ColumnDefinitions>
         <Button x:Name="btnRelatFolhaListar" Content="LISTAR" HorizontalAlignment="Left" Margin="21,24,0,0" VerticalAlignment="Top" Width="75" Click="btnRelatFolhaListar_Click"/>
         <Button x:Name="btnRelatFolhaVoltar" Content="VOLTAR" HorizontalAlignment="Left" Margin="156,24,0,0" VerticalAlignment="Top" Width="75" Click="btnRelatFolhaVoltar_Click"/>
-        <ListView x:Name="lvFolha" HorizontalAlignment="Left" Height="100" Margin="21,60,0,0" VerticalAlignment="Top" Width="547" Grid.ColumnSpan="2">
+        <ListView x:Name="lvFolha" HorizontalAlignment="Left" Height="198" Margin="10,60,-174,0" VerticalAlignment="Top" Width="924" Grid.ColumnSpan="2">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NOME" Width="100" DisplayMemberBinding="{Binding Path=EmpregadoNome}" />
+                    <GridViewColumn Header="CPF" Width="80" DisplayMemberBinding="{Binding Path=EmpregadoCPF}" />
+                    <GridViewColumn Header="HR NORMAL" Width="80" DisplayMemberBinding="{Binding QtdeHoraNormal}" />
+                    <GridViewColumn Header="VLR NORMAL" Width="80" DisplayMemberBinding="{Binding VlrHoraNormal}" />
+                    <GridViewColumn Header="HR EXTRA" Width="80" DisplayMemberBinding="{Binding QtdeHoraExtra}" />
+                    <GridViewColumn Header="VLR EXTRA" Width="80" DisplayMemberBinding="{Binding VlrHoraExtra}" />
+                    <GridViewColumn Header="VLR BRUTO" Width="80" DisplayMemberBinding="{Binding SalarioBruto}" />
+                    <GridViewColumn Header="INSS" Width="80" DisplayMemberBinding="{Binding VlrInss}" />
+                    <GridViewColumn Header="IR" Width="80" DisplayMemberBinding="{Binding VlrIR}" />
+                    <GridViewColumn Header="VLR LIQ" Width="80" DisplayMemberBinding="{Binding SalarioLiquido}" />
+                    <GridViewColumn Header="MÊS" Width="50" DisplayMemberBinding="{Binding Mes}" />
+                    <GridViewColumn Header="ANO" Width="50" DisplayMemberBinding="{Binding Ano}" />
+                </GridView>
+            </ListView.View>
+
+
+
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>

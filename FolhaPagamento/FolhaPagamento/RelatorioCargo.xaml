@@ -15,7 +15,15 @@
         <Button x:Name="btnGerarRelatCargo" Content="LISTAR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="67" FontSize="9" Click="btnGerarRelatCargo_Click" Height="25"/>
         <Button x:Name="btbVoltarRelat" Content="VOLTAR" HorizontalAlignment="Left" Margin="145,8,0,0" VerticalAlignment="Top" Width="66" FontSize="9" Click="btbVoltarRelat_Click" Height="27"/>
         <Label x:Name="label" HorizontalAlignment="Left" Margin="77,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <ListView x:Name="lvCargos" HorizontalAlignment="Left" Height="151" Margin="10,66,0,0" VerticalAlignment="Top" Width="340">
+        <ListView x:Name="lvCargos" HorizontalAlignment="Left" Height="259" Margin="10,66,0,0" VerticalAlignment="Top" Width="305">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NOME CARGO" Width="150" DisplayMemberBinding="{Binding NomeCargo}" />
+                    <GridViewColumn Header="VALOR HORA" Width="150" DisplayMemberBinding="{Binding ValorHora}" />
+                </GridView>
+            </ListView.View>
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -24,7 +32,10 @@
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
+
+
         </ListView>
 
     </Grid>
 </Window>
+

@@ -28,11 +28,11 @@ namespace Controllers
 
         // SELECT BY ID  NÃO UTILIZADO
 
-        public Cargo PesquisarPorID(int id)    // tirei o static
-        {
+        //public Cargo PesquisarPorID(int id)    // tirei o static
+        //{
                                  
-            return ContextoSingleton.Instancia.Cargos.Find(id);
-        }
+          //  return ContextoSingleton.Instancia.Cargos.Find(id);
+        //}
 
 
         //public Cargo PesquisarPorNome(string nome)

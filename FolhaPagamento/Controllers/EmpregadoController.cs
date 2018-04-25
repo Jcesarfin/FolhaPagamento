@@ -30,7 +30,7 @@ namespace Controllers
         }
 
 
-        // SELECT BY ID - NÃO UTILIZADA
+        // SELECT BY ID 
 
         public static Empregado PesquisarPorID(int id)
         {

@@ -17,15 +17,24 @@
         </Grid.RowDefinitions>
         <Button x:Name="btnRelatEmpVoltar" Content="VOLTAR" HorizontalAlignment="Left" Margin="188,25,0,0" VerticalAlignment="Top" Width="116" Height="20" Click="btnRelatEmpVoltar_Click"/>
         <Button x:Name="btnRelatEmpListar" Content="LISTAR" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" Width="75" Click="btnRelatEmpListar_Click"/>
-        <ListView x:Name="lvEmpregado" HorizontalAlignment="Left" Height="100" Margin="30,66,0,0" VerticalAlignment="Top" Width="684" RenderTransformOrigin="0.5,0.5">
-            <ListView.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleY="0.204"/>
-                    <RotateTransform/>
-                    <TranslateTransform Y="0.996"/>
-                </TransformGroup>
-            </ListView.RenderTransform>
+        <ListView x:Name="lvEmpregado" HorizontalAlignment="Left" Height="250" Margin="10,66,0,0" VerticalAlignment="Top" Width="740" RenderTransformOrigin="0.5,0.5">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="NOME" Width="100" DisplayMemberBinding="{Binding Nome}" />
+                    <GridViewColumn Header="IDENTIDADE" Width="80" DisplayMemberBinding="{Binding Identidade}" />
+                    <GridViewColumn Header="CPF" Width="80" DisplayMemberBinding="{Binding CPF}" />
+                    <GridViewColumn Header="SEXO" Width="80" DisplayMemberBinding="{Binding Sexo}" />
+                    <GridViewColumn Header="DATA NASC" Width="80" DisplayMemberBinding="{Binding DataNascimento}" />
+                    <GridViewColumn Header="DATA ADM" Width="80" DisplayMemberBinding="{Binding DataAdmissão}" />
+                    <GridViewColumn Header="DATA DEM" Width="80" DisplayMemberBinding="{Binding DataDemissão}" />
+                    <GridViewColumn Header="DEPTO" Width="80" DisplayMemberBinding="{Binding Departamento}" />
+                    <GridViewColumn Header="CARGO" Width="80" DisplayMemberBinding="{Binding Cargo}" />
+                </GridView>
+            </ListView.View>
+
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -43,7 +52,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
+
 
 
 

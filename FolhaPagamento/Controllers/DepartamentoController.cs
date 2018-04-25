@@ -33,58 +33,58 @@ namespace Controllers
 
         // SELECT BY ID
 
-        public static Departamento PesquisarPorID (int id)
-        {
-           return ContextoSingleton.Instancia.Departamentos.Find(id);
-        }
+        //public static Departamento PesquisarPorID (int id)
+        //{
+         //  return ContextoSingleton.Instancia.Departamentos.Find(id);
+       // }
 
 
-        public Departamento PesquisarPorNome(string nome)
-        {
-            var c = from x in ContextoSingleton.Instancia.Departamentos
-                    where x.NomeDepartamento.ToLower().Contains(nome.Trim().ToLower())
-                    select x;
+        //public Departamento PesquisarPorNome(string nome)
+        //{
+          //  var c = from x in ContextoSingleton.Instancia.Departamentos
+         //           where x.NomeDepartamento.ToLower().Contains(nome.Trim().ToLower())
+         //           select x;
 
-            if (c != null)
-                return c.FirstOrDefault();
-            else
-                return null;
-        }
+         //   if (c != null)
+            //    return c.FirstOrDefault();
+           // else
+          //      return null;
+        //}
 
         
 
 
         // EDIT
 
-        public static void EditarDepartamento(int id, Departamento novoDepartamento)
-        {
+        //public static void EditarDepartamento(int id, Departamento novoDepartamento)
+        //{
             
-           Departamento departamentoEditar = PesquisarPorID(id);
+        //   Departamento departamentoEditar = PesquisarPorID(id);
 
-            if (departamentoEditar != null)
-            {
-                departamentoEditar.NomeDepartamento = novoDepartamento.NomeDepartamento;
-                departamentoEditar.LocalDepartamento = novoDepartamento.LocalDepartamento;
+        //    if (departamentoEditar != null)
+         //   {
+         //       departamentoEditar.NomeDepartamento = novoDepartamento.NomeDepartamento;
+         //       departamentoEditar.LocalDepartamento = novoDepartamento.LocalDepartamento;
 
-                ContextoSingleton.Instancia.Entry(departamentoEditar).State = System.Data.Entity.EntityState.Modified;
+         //       ContextoSingleton.Instancia.Entry(departamentoEditar).State = System.Data.Entity.EntityState.Modified;
 
-                ContextoSingleton.Instancia.SaveChanges();
+         //       ContextoSingleton.Instancia.SaveChanges();
 
 
-            }
-        }
+           // }
+       // }
 
         // DELETE
 
-        public static void ExcluirDepartamento (int id)
-        {
-            Departamento d = ContextoSingleton.Instancia.Departamentos.Find(id);
-            ContextoSingleton.Instancia.Entry(d).State = System.Data.Entity.EntityState.Deleted;
+      //  public static void ExcluirDepartamento (int id)
+      //  {
+      //      Departamento d = ContextoSingleton.Instancia.Departamentos.Find(id);
+       //     ContextoSingleton.Instancia.Entry(d).State = System.Data.Entity.EntityState.Deleted;
 
-            ContextoSingleton.Instancia.SaveChanges();
+        //    ContextoSingleton.Instancia.SaveChanges();
             
 
-        }
+      //  }
         
     }
 }

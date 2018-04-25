@@ -15,7 +15,16 @@
         <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Height="13" Width="38"/>
         <Button x:Name="btnVoltarRelatGeral" Content="VOLTAR" HorizontalAlignment="Left" Margin="69,7,0,0" VerticalAlignment="Top" Width="61" FontSize="9" Height="16" Click="btnVoltarRelatGeral_Click"/>
         <Button x:Name="btbRelatGerar" Content="LISTAR" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="54" FontSize="9" Height="16" Click="btbRelatGerar_Click"/>
-        <ListView x:Name="lvDepto" HorizontalAlignment="Left" Height="100" Margin="10,49,0,0" VerticalAlignment="Top" Width="370">
+        <ListView x:Name="lvDepto" HorizontalAlignment="Left" Height="336" Margin="10,49,0,0" VerticalAlignment="Top" Width="307">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="DEPARTAMENTO" Width="150" DisplayMemberBinding="{Binding NomeDepartamento}" />
+                    <GridViewColumn Header="LOCAL" Width="150" DisplayMemberBinding="{Binding LocalDepartamento}" />
+                </GridView>
+            </ListView.View>
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
