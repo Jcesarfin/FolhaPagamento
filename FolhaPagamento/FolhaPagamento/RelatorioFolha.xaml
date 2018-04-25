@@ -17,8 +17,8 @@
 
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="NOME" Width="100" DisplayMemberBinding="{Binding Path=EmpregadoNome}" />
-                    <GridViewColumn Header="CPF" Width="80" DisplayMemberBinding="{Binding Path=EmpregadoCPF}" />
+                    <GridViewColumn Header="NOME" Width="100" DisplayMemberBinding="{Binding Path=_Empregado.Nome}" />
+                    <GridViewColumn Header="CPF" Width="80" DisplayMemberBinding="{Binding Path=_Empregado.CPF}" />
                     <GridViewColumn Header="HR NORMAL" Width="80" DisplayMemberBinding="{Binding QtdeHoraNormal}" />
                     <GridViewColumn Header="VLR NORMAL" Width="80" DisplayMemberBinding="{Binding VlrHoraNormal}" />
                     <GridViewColumn Header="HR EXTRA" Width="80" DisplayMemberBinding="{Binding QtdeHoraExtra}" />
